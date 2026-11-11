@@ -549,6 +549,10 @@ Q10. Is the DOCTYPE declaration an HTML tag?
 No. It is a declaration that identifies the
 document type and rendering mode.
 
+==================================================
+END OF SECTION 2
+==================================================
+
 
 ==================================================
 SECTION 3: HTML TAGS, ELEMENTS AND ATTRIBUTES
@@ -988,7 +992,451 @@ additional information on an element.
 END OF SECTION 3
 ==================================================
 
+
 ==================================================
-END OF SECTION 2
+SECTION 4: HTML HEADINGS, PARAGRAPHS AND TEXT FORMATTING
 ==================================================
+
+1. HTML Headings
+
+HTML provides six levels of headings, from h1 to h6.
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+Explanation:
+
+- h1 represents the most important heading.
+- h6 represents the least important heading.
+- h1 to h6 define the heading hierarchy.
+- Browsers display headings with different default sizes.
+
+Important Points:
+
+- Use headings to organize webpage content.
+- Generally, use one main h1 heading per page.
+- Do not choose heading levels only based on their size.
+- Maintain a logical heading hierarchy.
+
+Example:
+
+<h1>Employee Management System</h1>
+
+<h2>Employee Details</h2>
+
+<h3>Personal Information</h3>
+
+<h3>Contact Information</h3>
+
+<h2>Department Details</h2>
+
+
+2. HTML Paragraph Tag
+
+The <p> tag defines a paragraph.
+
+Example:
+
+<p>
+    HTML is used to create the structure
+    of web pages.
+</p>
+
+Important Points:
+
+- Browsers automatically add spacing before
+  and after paragraphs.
+- Browsers ignore extra spaces and line breaks
+  in normal HTML text.
+- Paragraphs are block-level elements.
+
+
+3. HTML Line Break Tag - <br>
+
+The <br> tag inserts a line break.
+
+Example:
+
+<p>
+    Hello Sneha!<br>
+    Welcome to HTML learning.
+</p>
+
+Output:
+
+Hello Sneha!
+Welcome to HTML learning.
+
+Important Points:
+
+- It is a void element.
+- It does not require a closing tag.
+- It is useful when a line break is meaningful,
+  such as in addresses or poetry.
+- Avoid using multiple br tags for page spacing.
+  Use CSS for layout and spacing.
+
+
+4. HTML Horizontal Rule Tag - <hr>
+
+The <hr> tag represents a thematic break
+between content sections.
+
+Example:
+
+<h2>Employee Details</h2>
+
+<p>Personal information.</p>
+
+<hr>
+
+<h2>Department Details</h2>
+
+<p>Department information.</p>
+
+Important Points:
+
+- It is a void element.
+- It generally displays a horizontal line.
+- It represents a thematic change in content.
+
+
+5. HTML Text Formatting Elements
+
+HTML provides several elements to format text
+and communicate its meaning.
+
+A. <b> - Bold Text
+
+Displays text in bold without adding special
+importance or emphasis.
+
+Example:
+
+<p>This is <b>bold text</b>.</p>
+
+
+B. <strong> - Important Text
+
+Indicates that the content has strong importance.
+
+Browsers generally display it in bold.
+
+Example:
+
+<p><strong>Warning:</strong> Do not share passwords.</p>
+
+
+C. <i> - Italic Text
+
+Represents text in an alternate voice or mood,
+such as technical terms or foreign words.
+
+Example:
+
+<p>This is an <i>italic</i> word.</p>
+
+
+D. <em> - Emphasized Text
+
+Indicates stress emphasis on particular content.
+
+Browsers generally display it in italics.
+
+Example:
+
+<p>You <em>must</em> complete the task.</p>
+
+
+E. <mark> - Highlighted Text
+
+Highlights text that is relevant in a particular context.
+
+Example:
+
+<p>Learn <mark>HTML</mark> for frontend development.</p>
+
+
+F. <small> - Smaller Text
+
+Represents side comments or small print.
+
+Example:
+
+<p>Price: ₹999</p>
+<p><small>Terms and conditions apply.</small></p>
+
+
+G. <del> - Deleted Text
+
+Represents text that has been deleted from a document.
+
+Browsers generally display a strikethrough.
+
+Example:
+
+<p>Price: <del>₹1500</del> ₹999</p>
+
+
+H. <ins> - Inserted Text
+
+Represents text that has been inserted into a document.
+
+Browsers generally display it with an underline.
+
+Example:
+
+<p>Price: ₹999 <ins>Limited offer</ins></p>
+
+
+I. <sub> - Subscript Text
+
+Displays text slightly below the normal text line.
+
+Example:
+
+<p>Water formula: H<sub>2</sub>O</p>
+
+Output:
+H₂O
+
+
+J. <sup> - Superscript Text
+
+Displays text slightly above the normal text line.
+
+Example:
+
+<p>Mathematical expression: X<sup>2</sup></p>
+
+Output:
+X²
+
+
+K. <u> - Underlined Text
+
+Represents text with a non-textual annotation
+or an underline-style presentation.
+
+Example:
+
+<p>This is <u>underlined text</u>.</p>
+
+
+L. <code> - Computer Code
+
+Represents a short piece of computer code.
+
+Example:
+
+<p>Use the <code>System.out.println()</code>
+method in Java.</p>
+
+
+M. <pre> - Preformatted Text
+
+Displays text while preserving spaces and line breaks.
+
+Example:
+
+<pre>
+Name: Sneha
+Role: Java Developer
+Experience: 4 Years
+</pre>
+
+Important:
+- Spaces and line breaks are preserved.
+- Commonly used for displaying code or preformatted text.
+
+
+N. <blockquote> - Block Quotation
+
+Represents a section quoted from another source.
+
+Example:
+
+<blockquote>
+    HTML provides the structure of a webpage.
+</blockquote>
+
+
+O. <q> - Inline Quotation
+
+Represents a short quotation inside a sentence.
+
+Example:
+
+<p>He said, <q>Practice makes perfect.</q></p>
+
+
+P. <abbr> - Abbreviation
+
+Represents an abbreviation or acronym.
+
+Example:
+
+<p>
+    <abbr title="HyperText Markup Language">
+        HTML
+    </abbr>
+    is a markup language.
+</p>
+
+The title attribute provides the full form.
+
+
+Q. <cite> - Citation
+
+Represents the title of a creative work.
+
+Example:
+
+<p>My favourite book is <cite>Wings of Fire</cite>.</p>
+
+
+6. Difference Between <b> and <strong>
+
+<b>:
+- Makes text visually bold.
+- Does not indicate additional importance.
+
+<strong>:
+- Indicates strong importance or seriousness.
+- Has semantic meaning.
+- Usually appears bold in browsers.
+
+Interview Tip:
+
+Use strong when the content is important.
+Use b when you only need stylistic attention.
+
+
+7. Difference Between <i> and <em>
+
+<i>:
+- Represents text in an alternate voice or mood.
+- Does not indicate stress emphasis.
+
+<em>:
+- Indicates stress emphasis.
+- Has semantic meaning.
+- Usually appears italic in browsers.
+
+Interview Tip:
+
+Use em when you want to emphasize a word.
+Use i for alternate voice, technical terms,
+or other appropriate stylistic purposes.
+
+
+8. Difference Between <br> and <hr>
+
+<br>:
+- Inserts a line break.
+- Moves content to the next line.
+
+<hr>:
+- Represents a thematic break.
+- Generally displays a horizontal line.
+
+
+9. Difference Between <pre> and <p>
+
+<pre>:
+- Preserves spaces and line breaks.
+- Useful for preformatted content.
+
+<p>:
+- Represents a paragraph.
+- Browsers normally collapse consecutive spaces
+  and line breaks into a single space.
+
+
+10. Can We Use HTML Tags Inside Other HTML Tags?
+
+Yes. HTML supports nested elements.
+
+Example:
+
+<p>
+    HTML is <strong>very important</strong>
+    for <em>frontend development</em>.
+</p>
+
+Important:
+Always follow proper nesting rules and avoid
+placing elements inside parents where they
+are not permitted.
+
+
+==================================================
+INTERVIEW QUICK REVISION
+==================================================
+
+Q1. How many heading tags are available in HTML?
+
+Six heading levels are available, from h1 to h6.
+
+Q2. What is the difference between h1 and h6?
+
+h1 represents the highest-level heading, whereas
+h6 represents the lowest-level heading.
+
+Q3. What is the difference between <b> and <strong>?
+
+b provides visual bold formatting.
+strong indicates semantic importance.
+
+Q4. What is the difference between <i> and <em>?
+
+i represents alternate voice or mood.
+em represents stress emphasis.
+
+Q5. What is the difference between <br> and <hr>?
+
+br inserts a line break.
+hr represents a thematic break.
+
+Q6. What is the purpose of the <pre> tag?
+
+It preserves whitespace and line breaks.
+
+Q7. What is the purpose of the <mark> tag?
+
+It highlights text relevant to the current context.
+
+Q8. What is the difference between <sub> and <sup>?
+
+sub displays text below the normal line.
+sup displays text above the normal line.
+
+Q9. Is <br> a paired or unpaired element?
+
+It is a void element and does not require a closing tag.
+
+Q10. What is the purpose of <blockquote>?
+
+It represents a section quoted from another source.
+
+Q11. Does HTML preserve multiple spaces?
+
+Not in normal text. Browsers collapse consecutive
+whitespace characters into a single space.
+The pre element preserves whitespace.
+
+Q12. Why should we use headings in HTML?
+
+Headings provide a logical content hierarchy
+and improve accessibility and document structure.
+
+
+==================================================
+END OF SECTION 4
+==================================================
+
 
