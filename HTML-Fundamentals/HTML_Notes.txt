@@ -219,3 +219,338 @@ content and closing tag.
 ==================================================
 END OF SECTION 1
 ==================================================
+
+
+==================================================
+SECTION 2: HTML DOCUMENT STRUCTURE
+==================================================
+
+1. Basic Structure of an HTML Document
+
+Every HTML document follows a standard structure.
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Webpage</title>
+</head>
+<body>
+
+    <h1>Welcome to HTML</h1>
+    <p>This is my first webpage.</p>
+
+</body>
+</html>
+
+
+2. Explanation of Each HTML Tag
+
+<!DOCTYPE html>
+
+- It is called the DOCTYPE declaration.
+- It tells the browser that the document uses HTML5.
+- It helps the browser render the webpage in standards mode.
+- It is not an HTML tag or an HTML element.
+
+<html>
+
+- It is the root element of an HTML document.
+- All other HTML elements are placed inside it.
+- It contains two main sections: head and body.
+
+<head>
+
+- Contains metadata and resources about the webpage.
+- Metadata means information about the HTML document.
+- Its contents are generally not displayed directly
+  on the webpage.
+
+Examples:
+- Page title
+- Character encoding
+- Viewport settings
+- CSS file references
+- SEO-related metadata
+
+<title>
+
+- Defines the title of the webpage.
+- The title appears in the browser tab.
+- It is important for SEO and user experience.
+
+<body>
+
+- Contains the actual visible content of the webpage.
+- Everything we want to display to users is generally
+  written inside the body.
+
+Examples:
+- Headings
+- Paragraphs
+- Images
+- Tables
+- Forms
+- Buttons
+
+
+3. What is the difference between Head and Body?
+
+HEAD:
+- Contains metadata about the webpage.
+- Includes title, meta tags and CSS references.
+- Content is generally not directly visible.
+
+BODY:
+- Contains the actual webpage content.
+- Displays text, images, links, forms, etc.
+- Visible to users.
+
+
+4. What is the lang Attribute?
+
+The lang attribute specifies the language of the
+HTML document.
+
+Example:
+
+<html lang="en">
+
+Here:
+- lang is an HTML attribute.
+- en represents English.
+
+Other examples:
+- en = English
+- hi = Hindi
+- fr = French
+- de = German
+
+Why is it used?
+
+- Helps screen readers identify the language.
+- Helps search engines understand the page language.
+- Helps browsers process language-specific content.
+
+
+5. What are Meta Tags?
+
+Meta tags provide information about an HTML document.
+
+They are written inside the head section.
+
+Meta tags are generally not visible on the webpage.
+
+Important Meta Tags:
+
+A. Character Encoding
+
+<meta charset="UTF-8">
+
+- Specifies the character encoding.
+- UTF-8 supports most characters and symbols
+  used across different languages.
+
+B. Viewport Meta Tag
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+- Helps webpages adjust to different screen sizes.
+- Important for responsive web design.
+- width=device-width sets the viewport width
+  to the device's width.
+- initial-scale=1.0 sets the initial zoom level.
+
+C. Description Meta Tag
+
+<meta name="description"
+      content="Learn HTML from beginner to advanced">
+
+- Provides a short description of the webpage.
+- Search engines may use it in search result snippets.
+
+D. Author Meta Tag
+
+<meta name="author" content="Your Name">
+
+- Specifies the author of the webpage.
+
+
+6. What is the Difference Between Title and Meta Description?
+
+TITLE:
+- Defines the title of the webpage.
+- Appears in the browser tab.
+- Can appear as the clickable title in search results.
+
+META DESCRIPTION:
+- Provides a short summary of the webpage.
+- May appear below the title in search results.
+
+
+7. Linking an External CSS File
+
+We use the <link> tag to connect an external
+CSS file with an HTML document.
+
+Example:
+
+<link rel="stylesheet" href="style.css">
+
+Explanation:
+
+rel="stylesheet"
+- Specifies that the linked resource is a stylesheet.
+
+href="style.css"
+- Specifies the location of the CSS file.
+
+The link element is written inside the head section.
+
+
+8. Adding JavaScript to HTML
+
+We use the <script> tag to include JavaScript.
+
+Example:
+
+<script src="script.js"></script>
+
+Explanation:
+
+src:
+- Specifies the location of the JavaScript file.
+
+The script tag can be placed in the head or body.
+
+For better loading behavior, we can use defer:
+
+<script src="script.js" defer></script>
+
+defer:
+- Downloads the JavaScript file while HTML parsing
+  continues.
+- Executes the script after HTML parsing is complete.
+- Deferred scripts execute in document order.
+
+
+9. What is the Difference Between HTML Tags
+and HTML Attributes?
+
+TAGS:
+Tags define HTML elements.
+
+Example:
+<p>Hello</p>
+
+ATTRIBUTES:
+Attributes provide additional information
+or configuration to HTML elements.
+
+Example:
+<p id="message">Hello</p>
+
+Here:
+- p = HTML tag
+- id = attribute
+- message = attribute value
+
+
+10. Complete HTML5 Boilerplate
+
+A boilerplate is a standard starting template
+used when creating a new HTML page.
+
+Example:
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="My first HTML webpage">
+
+    <title>My First Webpage</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <h1>Hello World!</h1>
+    <p>Welcome to my website.</p>
+
+</body>
+
+</html>
+
+
+==================================================
+INTERVIEW QUICK REVISION
+==================================================
+
+Q1. What is <!DOCTYPE html>?
+
+It is a declaration that tells the browser to
+interpret the document using HTML5 standards mode.
+
+Q2. What is the root element of HTML?
+
+The <html> element is the root element of an
+HTML document.
+
+Q3. What is the difference between head and body?
+
+Head contains metadata and resource references.
+Body contains the actual webpage content.
+
+Q4. What is the purpose of the viewport meta tag?
+
+It helps webpages adjust their layout to different
+device screen sizes.
+
+Q5. Why do we use UTF-8?
+
+UTF-8 supports a wide range of characters,
+symbols and languages.
+
+Q6. What is the purpose of the title tag?
+
+It defines the webpage title displayed in the
+browser tab.
+
+Q7. What is an HTML boilerplate?
+
+It is a standard HTML document template that
+provides the basic structure for a webpage.
+
+Q8. What is the purpose of the defer attribute?
+
+It allows the browser to download JavaScript
+while parsing HTML and execute it after HTML
+parsing is complete.
+
+Q9. Can we have multiple head and body elements
+in one HTML document?
+
+No. A normal HTML document has one head element
+and one body element.
+
+Q10. Is the DOCTYPE declaration an HTML tag?
+
+No. It is a declaration that identifies the
+document type and rendering mode.
+
+
+==================================================
+END OF SECTION 2
+==================================================
+
