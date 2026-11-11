@@ -1,0 +1,221 @@
+==================================================
+SECTION 1: INTRODUCTION TO HTML
+==================================================
+
+1. What is HTML?
+
+HTML stands for HyperText Markup Language.
+
+It is the standard markup language used to create
+the structure of web pages.
+
+HTML tells the browser how to organize and display
+content such as:
+
+- Headings
+- Paragraphs
+- Images
+- Links
+- Tables
+- Forms
+- Buttons
+
+Example:
+
+When we open a website, HTML defines the structure
+of the page, CSS handles its appearance, and
+JavaScript adds interactivity.
+
+
+2. Why is HTML used?
+
+- To create the structure of web pages.
+- To display text, images, videos and links.
+- To create forms for collecting user information.
+- To organize website content.
+- To provide semantic meaning to web content.
+- To work with CSS and JavaScript in frontend development.
+
+
+3. Is HTML a Programming Language?
+
+No. HTML is NOT a programming language.
+
+HTML is a markup language.
+
+Reason:
+
+A programming language contains programming logic
+such as conditions, loops and calculations.
+
+HTML does not provide programming logic.
+It defines the structure and meaning of content.
+
+Example:
+
+HTML:
+<h1>Hello World</h1>
+
+This displays a heading on the webpage.
+
+Java:
+if (age >= 18) {
+    System.out.println("Eligible");
+}
+
+This executes conditional logic.
+
+
+4. What is HyperText?
+
+HyperText means text that contains links
+to other documents or web pages.
+
+Example:
+
+Clicking a link on one webpage and navigating
+to another webpage is an example of HyperText.
+
+
+5. What is a Markup Language?
+
+A markup language uses tags or special instructions
+to define the structure and presentation of content.
+
+Example:
+
+<p>This is a paragraph.</p>
+
+Here:
+- <p> identifies the paragraph.
+- The browser understands that the content
+  represents a paragraph.
+
+
+6. How does HTML work?
+
+1. A developer writes HTML code.
+2. The HTML file is saved with a .html extension.
+3. The browser reads the HTML file.
+4. The browser parses the HTML.
+5. The browser creates the DOM (Document Object Model).
+6. The browser displays the webpage.
+
+Examples of browsers:
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Edge
+- Safari
+
+
+7. What is the role of HTML, CSS and JavaScript?
+
+HTML:
+Defines the structure of a webpage.
+
+CSS:
+Controls the appearance, layout, colors,
+fonts and styling of a webpage.
+
+JavaScript:
+Adds dynamic behavior and interactivity.
+
+Easy way to remember:
+
+HTML = Structure
+CSS = Styling
+JavaScript = Behavior
+
+
+8. What is an HTML file?
+
+An HTML file is a text file containing HTML code.
+
+It is generally saved with the .html extension.
+
+Examples:
+- index.html
+- about.html
+- contact.html
+
+The index.html file is commonly used as the
+default entry page of a website.
+
+
+9. What are HTML tags?
+
+HTML tags are keywords enclosed within angle
+brackets that tell the browser how to interpret
+different types of content.
+
+Example:
+
+<h1>Welcome</h1>
+
+Opening tag: <h1>
+Content: Welcome
+Closing tag: </h1>
+
+
+10. What are HTML elements?
+
+An HTML element generally consists of:
+
+Opening tag + Content + Closing tag
+
+Example:
+
+<p>Hello World</p>
+
+The complete structure is called an HTML element.
+
+
+11. What is the difference between HTML and HTML5?
+
+HTML5 is the fifth major version of HTML.
+
+HTML5 introduced several features, including:
+
+- Semantic elements such as header, footer and article.
+- Native audio and video support.
+- Canvas and SVG support.
+- Improved form input types.
+- Local storage and session storage.
+- Better support for modern web applications.
+
+
+==================================================
+INTERVIEW QUICK REVISION
+==================================================
+
+Q1. What is HTML?
+HTML is a markup language used to define the
+structure of web pages.
+
+Q2. Is HTML a programming language?
+No. It is a markup language because it defines
+the structure of content rather than executing
+programming logic.
+
+Q3. What is the full form of HTML?
+HyperText Markup Language.
+
+Q4. What is the difference between HTML and HTML5?
+HTML5 is a newer version that introduced semantic
+elements, multimedia support, improved forms
+and modern browser capabilities.
+
+Q5. What is the role of a browser?
+A browser reads HTML, CSS and JavaScript,
+processes them and displays the webpage.
+
+Q6. What is the difference between a tag and
+an element?
+
+A tag is the markup enclosed within angle brackets.
+An element generally includes the opening tag,
+content and closing tag.
+
+==================================================
+END OF SECTION 1
+==================================================
