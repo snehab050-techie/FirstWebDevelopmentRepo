@@ -1440,3 +1440,614 @@ END OF SECTION 4
 ==================================================
 
 
+==================================================
+SECTION 5: HTML LINKS AND IMAGES
+==================================================
+
+1. HTML Links (Anchor Tag)
+
+The <a> tag is called the anchor tag.
+
+It is used to create hyperlinks that allow users
+to navigate from one webpage to another webpage,
+website, file or location within the same page.
+
+Syntax:
+
+<a href="URL">Link Text</a>
+
+Example:
+
+<a href="https://www.google.com">Visit Google</a>
+
+Explanation:
+
+- <a> = Anchor tag.
+- href = Specifies the destination URL.
+- Visit Google = Clickable link text.
+
+When a user clicks the link, the browser navigates
+to the specified destination.
+
+
+2. What is the href Attribute?
+
+href stands for Hypertext Reference.
+
+It specifies the destination of a hyperlink.
+
+Example:
+
+<a href="https://www.google.com">Google</a>
+
+The browser navigates to Google when the user
+clicks the link.
+
+
+3. Types of URLs in HTML
+
+There are two commonly used types of URLs.
+
+A. Absolute URL
+
+An absolute URL contains the complete address
+of a resource, including the protocol and domain.
+
+Example:
+
+<a href="https://www.google.com">Google</a>
+
+Other examples:
+
+https://www.example.com/about.html
+https://www.example.com/images/logo.png
+
+Used when linking to external websites or
+resources with a complete address.
+
+
+B. Relative URL
+
+A relative URL specifies the location of a resource
+relative to the current document or its base URL.
+
+Example:
+
+<a href="about.html">About Us</a>
+
+Other examples:
+
+<a href="pages/contact.html">Contact</a>
+
+<img src="images/logo.png" alt="Logo">
+
+Used commonly when linking to files within
+the same website or project.
+
+
+4. Understanding Relative Paths
+
+Consider this project structure:
+
+my-website/
+|
+|-- index.html
+|-- about.html
+|
+|-- pages/
+|   |-- contact.html
+|
+|-- images/
+|   |-- logo.png
+|
+|-- css/
+    |-- style.css
+
+Assume we are writing code inside index.html.
+
+A. Same Folder:
+
+<a href="about.html">About</a>
+
+B. Inside a Subfolder:
+
+<a href="pages/contact.html">Contact</a>
+
+C. Image Inside a Folder:
+
+<img src="images/logo.png" alt="Logo">
+
+D. Parent Folder:
+
+../ means move one directory level up.
+
+Example:
+
+<a href="../index.html">Home</a>
+
+Important:
+Relative paths are resolved from the document's
+base URL, not necessarily from the location of
+the currently displayed element.
+
+
+5. What is the target Attribute?
+
+The target attribute specifies where to open
+the linked resource.
+
+Common values:
+
+A. _self
+
+Opens the link in the same browsing context.
+
+Example:
+
+<a href="https://www.google.com" target="_self">
+    Google
+</a>
+
+B. _blank
+
+Opens the link in a new tab or browsing context.
+
+Example:
+
+<a href="https://www.google.com" target="_blank"
+   rel="noopener noreferrer">
+    Google
+</a>
+
+C. _parent
+
+Opens the link in the parent browsing context.
+
+D. _top
+
+Opens the link in the top-level browsing context.
+
+Important:
+For external links using target="_blank",
+using rel="noopener" is a good security practice.
+noreferrer additionally prevents sending the
+referrer information.
+
+
+6. What is the rel Attribute?
+
+The rel attribute specifies the relationship
+between the current document and the linked resource.
+
+Example:
+
+<a href="https://www.example.com"
+   target="_blank"
+   rel="noopener noreferrer">
+   Visit Website
+</a>
+
+Common values:
+
+- noopener: Prevents the opened page from accessing
+  the originating window through window.opener.
+- noreferrer: Prevents sending referrer information.
+- nofollow: Gives search engines a link relationship
+  hint not to follow the link for ranking purposes.
+- stylesheet: Identifies a linked CSS stylesheet.
+
+
+7. Opening an Email Using HTML
+
+The mailto: scheme opens the user's default
+email application.
+
+Example:
+
+<a href="mailto:support@example.com">
+    Contact Support
+</a>
+
+We can also specify a subject:
+
+<a href="mailto:support@example.com?subject=Support%20Request">
+    Send Email
+</a>
+
+
+8. Making a Phone Number Clickable
+
+We can use the tel: scheme to create a clickable
+phone number.
+
+Example:
+
+<a href="tel:+911234567890">
+    Call Us
+</a>
+
+This is especially useful on mobile devices.
+
+
+9. Creating a Link to a Specific Section
+of the Same Webpage
+
+We can use the id attribute to navigate to
+a specific section.
+
+Example:
+
+<a href="#contact">Go to Contact Section</a>
+
+<h2 id="contact">Contact Us</h2>
+
+Explanation:
+
+- #contact refers to an element with id="contact".
+- Clicking the link moves the browser to that section.
+
+
+10. HTML Images
+
+The <img> tag is used to display images
+on a webpage.
+
+Syntax:
+
+<img src="image.jpg" alt="Description">
+
+Example:
+
+<img src="images/profile.jpg" alt="Employee Photo">
+
+Explanation:
+
+- img = Image element.
+- src = Specifies the image location.
+- alt = Provides alternative text.
+
+Important:
+The img element is a void element.
+It does not require a closing tag.
+
+
+11. Important Image Attributes
+
+A. src
+
+Specifies the path or URL of the image.
+
+Example:
+
+<img src="logo.png" alt="Company Logo">
+
+
+B. alt
+
+Provides alternative text for the image.
+
+Example:
+
+<img src="profile.jpg" alt="Employee Profile Photo">
+
+Why is alt important?
+
+- Improves accessibility.
+- Helps screen readers describe images.
+- Displays alternative text when an image
+  cannot be loaded.
+
+Important:
+For decorative images that add no meaningful
+information, use alt="".
+
+Example:
+
+<img src="decoration.png" alt="">
+
+
+C. width
+
+Specifies the image width.
+
+Example:
+
+<img src="photo.jpg" width="300" alt="Photo">
+
+
+D. height
+
+Specifies the image height.
+
+Example:
+
+<img src="photo.jpg" height="200" alt="Photo">
+
+
+E. title
+
+Provides additional information about the image.
+
+Example:
+
+<img src="photo.jpg"
+     alt="Employee Photo"
+     title="Employee Profile">
+
+
+12. Setting Image Dimensions
+
+We can set both width and height.
+
+Example:
+
+<img src="photo.jpg"
+     alt="Employee Photo"
+     width="300"
+     height="200">
+
+Important:
+
+- Width and height define the displayed dimensions.
+- Specify the correct aspect ratio to avoid distortion.
+- CSS is commonly used for responsive image sizing.
+
+Example using CSS:
+
+<img src="photo.jpg" alt="Photo"
+     style="max-width: 100%; height: auto;">
+
+
+13. What are Common Image Formats?
+
+A. JPEG / JPG
+
+- Commonly used for photographs.
+- Supports lossy compression.
+- Does not support transparency.
+
+B. PNG
+
+- Supports transparency.
+- Uses lossless compression.
+- Commonly used for logos and graphics.
+
+C. GIF
+
+- Supports simple animation.
+- Supports limited colors.
+- Can be used for simple animated images.
+
+D. SVG
+
+- Vector image format.
+- Can be scaled without losing quality.
+- Commonly used for icons and logos.
+
+E. WebP
+
+- Modern image format.
+- Supports lossy and lossless compression.
+- Supports transparency and animation.
+- Often provides smaller file sizes.
+
+F. AVIF
+
+- Modern image format.
+- Provides efficient image compression.
+- Supports transparency and HDR features.
+
+
+14. Making an Image Clickable
+
+We can place an image inside an anchor tag.
+
+Example:
+
+<a href="https://www.google.com">
+    <img src="google-logo.png" alt="Visit Google">
+</a>
+
+When the user clicks the image, the browser
+navigates to Google.
+
+
+15. What is the Difference Between <a> and <img>?
+
+<a>:
+- Creates a hyperlink.
+- Used for navigation.
+- Uses href to specify the destination.
+
+<img>:
+- Displays an image.
+- Uses src to specify the image source.
+- Uses alt to provide alternative text.
+
+We can also combine both to create
+a clickable image.
+
+
+16. What is the <figure> Element?
+
+The <figure> element represents self-contained
+content such as images, diagrams or illustrations.
+
+Example:
+
+<figure>
+    <img src="employee.jpg"
+         alt="Employee working on a laptop">
+
+    <figcaption>
+        Employee working on a project.
+    </figcaption>
+</figure>
+
+<figcaption> provides a caption for the figure.
+
+
+17. What is Lazy Loading?
+
+Lazy loading means loading images only when
+they are needed, usually when they approach
+the visible area of the webpage.
+
+Example:
+
+<img src="large-image.jpg"
+     alt="Large Image"
+     loading="lazy">
+
+Benefits:
+
+- Reduces initial page loading work.
+- Saves bandwidth when images are not viewed.
+- Can improve initial page performance.
+
+Important:
+Avoid lazy loading the main above-the-fold
+or likely Largest Contentful Paint image.
+Such images may need eager loading instead.
+
+
+18. What is Responsive Image Loading?
+
+Responsive images allow browsers to choose
+appropriate image resources based on screen size
+or display requirements.
+
+A. Using srcset
+
+<img
+    src="small.jpg"
+    srcset="small.jpg 480w,
+            medium.jpg 800w,
+            large.jpg 1200w"
+    sizes="(max-width: 600px) 480px,
+           (max-width: 1000px) 800px,
+           1200px"
+    alt="Nature">
+
+Explanation:
+
+- src provides a fallback image.
+- srcset provides multiple image candidates.
+- sizes tells the browser the expected display width.
+
+B. Using picture
+
+The <picture> element allows different image
+sources to be selected based on conditions.
+
+Example:
+
+<picture>
+    <source media="(max-width: 600px)"
+            srcset="mobile.jpg">
+
+    <source media="(min-width: 601px)"
+            srcset="desktop.jpg">
+
+    <img src="desktop.jpg" alt="Nature">
+</picture>
+
+The browser selects a suitable source.
+The img element provides the fallback.
+
+
+==================================================
+INTERVIEW QUICK REVISION
+==================================================
+
+Q1. What is an anchor tag?
+
+The anchor tag creates hyperlinks to navigate
+between webpages or resources.
+
+Q2. What is the purpose of href?
+
+It specifies the destination URL of a hyperlink.
+
+Q3. What is the difference between absolute
+and relative URLs?
+
+An absolute URL contains the complete resource
+address. A relative URL specifies a resource
+location relative to the current document's
+base URL.
+
+Q4. What is the purpose of target="_blank"?
+
+It opens the linked resource in a new browsing
+context, usually a new tab.
+
+Q5. What is the purpose of the alt attribute?
+
+It provides alternative text for images and
+improves accessibility.
+
+Q6. Is img a paired or unpaired element?
+
+It is a void element and does not require
+a closing tag.
+
+Q7. What is the difference between src and href?
+
+src specifies the source of an embedded resource,
+such as an image or script.
+
+href specifies a linked resource or destination,
+such as a hyperlink or stylesheet.
+
+Q8. How can we make an image clickable?
+
+Place the img element inside an anchor element.
+
+Q9. What is lazy loading?
+
+It delays loading resources until they are
+needed or approaching the visible area.
+
+Q10. What is the purpose of the picture element?
+
+It allows browsers to select different image
+sources based on media conditions or formats.
+
+Q11. What is the difference between PNG and JPEG?
+
+PNG supports lossless compression and transparency.
+JPEG uses lossy compression and is commonly used
+for photographs.
+
+Q12. What is the purpose of loading="lazy"?
+
+It enables browser-supported lazy loading
+for an image.
+
+Q13. What is the purpose of rel="noopener"?
+
+It prevents a newly opened browsing context
+from accessing the original page through
+window.opener.
+
+Q14. What is the purpose of the figure element?
+
+It represents self-contained content such as
+images, diagrams and illustrations.
+
+Q15. How do you navigate to a specific section
+of the same webpage?
+
+Use an anchor link with the target element's ID.
+
+Example:
+
+<a href="#skills">Go to Skills</a>
+
+<h2 id="skills">Skills</h2>
+
+
+==================================================
+END OF SECTION 5
+==================================================
