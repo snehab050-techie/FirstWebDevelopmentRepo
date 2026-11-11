@@ -551,6 +551,444 @@ document type and rendering mode.
 
 
 ==================================================
+SECTION 3: HTML TAGS, ELEMENTS AND ATTRIBUTES
+==================================================
+
+1. What are HTML Tags?
+
+HTML tags are keywords enclosed within angle brackets
+(< >) that define the structure and meaning of content.
+
+Example:
+
+<h1>Welcome</h1>
+
+Here:
+- <h1> is the opening tag.
+- </h1> is the closing tag.
+
+Tags tell the browser how to interpret the content.
+
+
+2. What are HTML Elements?
+
+An HTML element generally consists of:
+
+Opening Tag + Content + Closing Tag
+
+Example:
+
+<p>Hello World</p>
+
+Here:
+- <p> = Opening tag
+- Hello World = Content
+- </p> = Closing tag
+
+The complete structure is called an HTML element.
+
+Important:
+An element is the complete unit, whereas a tag
+is the markup used to define that element.
+
+
+3. Difference Between HTML Tags and Elements
+
+HTML TAG:
+- Represents the markup enclosed within angle brackets.
+- Example: <p> and </p>
+
+HTML ELEMENT:
+- Represents the complete structure.
+- Includes opening tag, content and closing tag.
+- Example: <p>Hello World</p>
+
+
+4. Types of HTML Elements Based on Tags
+
+HTML elements can be broadly classified into:
+
+A. Paired Elements (Container Elements)
+
+- Have an opening tag and a closing tag.
+- Content is placed between these tags.
+
+Examples:
+
+<h1>Heading</h1>
+<p>Paragraph</p>
+<div>Container</div>
+<span>Inline content</span>
+
+
+B. Empty Elements (Void Elements)
+
+- Do not have closing tags.
+- Cannot contain child elements.
+- Used for specific purposes.
+
+Examples:
+
+<br>       <!-- Line break -->
+<hr>       <!-- Horizontal line -->
+<img>      <!-- Image -->
+<input>    <!-- Input field -->
+<meta>     <!-- Metadata -->
+<link>     <!-- External resource -->
+<area>
+<source>
+<embed>
+<wbr>
+
+
+Note:
+In HTML5, void elements do not require a closing
+slash. For example, <br> is valid.
+
+You may also see <br />, but the slash is optional.
+
+
+5. What are HTML Attributes?
+
+Attributes provide additional information or
+configuration to HTML elements.
+
+They are generally specified in the opening tag.
+
+Syntax:
+
+<tagname attribute="value">Content</tagname>
+
+Example:
+
+<p id="message" class="info">
+    Hello World
+</p>
+
+Here:
+- id = Attribute name
+- message = Attribute value
+- class = Attribute name
+- info = Attribute value
+
+Attributes help control the behavior, identification
+and configuration of HTML elements.
+
+
+6. Commonly Used HTML Attributes
+
+A. id
+
+- Gives an element a unique identifier.
+- Commonly used in CSS and JavaScript.
+
+Example:
+
+<p id="username">Sneha</p>
+
+
+B. class
+
+- Groups multiple elements under a common name.
+- Commonly used for CSS styling and JavaScript.
+
+Example:
+
+<p class="info">First paragraph</p>
+<p class="info">Second paragraph</p>
+
+
+C. style
+
+- Applies inline CSS directly to an element.
+
+Example:
+
+<p style="color: blue;">Hello World</p>
+
+
+D. title
+
+- Provides additional information about an element.
+- Commonly displayed as a tooltip on hover.
+
+Example:
+
+<p title="This is additional information">
+    Hover over me
+</p>
+
+
+E. href
+
+- Specifies the destination URL of a hyperlink.
+- Used with the anchor element.
+
+Example:
+
+<a href="https://www.google.com">Google</a>
+
+
+F. src
+
+- Specifies the source location of an external resource.
+- Commonly used with images, audio and scripts.
+
+Example:
+
+<img src="photo.jpg" alt="My Photo">
+
+
+G. alt
+
+- Provides alternative text for an image.
+- Helps screen readers understand the image.
+- Displayed when an image cannot be loaded.
+
+Example:
+
+<img src="logo.png" alt="Company Logo">
+
+
+7. What are Global Attributes?
+
+Global attributes are attributes that can be used
+on most HTML elements.
+
+Important global attributes:
+
+- id
+- class
+- style
+- title
+- hidden
+- lang
+- data-*
+- tabindex
+- contenteditable
+- draggable
+- dir
+
+Example:
+
+<p contenteditable="true">
+    You can edit this paragraph.
+</p>
+
+The contenteditable attribute allows users to
+edit the content directly in the browser.
+
+
+8. Difference Between id and class
+
+id:
+- Used to identify a specific element.
+- Intended to be unique within an HTML document.
+- Selected in CSS using #.
+
+class:
+- Used to group multiple elements.
+- Can be reused across multiple elements.
+- Selected in CSS using .
+
+Example:
+
+<p id="heading">Welcome</p>
+
+<p class="info">First paragraph</p>
+<p class="info">Second paragraph</p>
+
+CSS:
+
+#heading {
+    color: blue;
+}
+
+.info {
+    color: green;
+}
+
+
+9. What are Boolean Attributes?
+
+Boolean attributes represent true or false
+based on their presence or absence.
+
+If the attribute is present, it is considered true.
+If it is absent, it is considered false.
+
+Examples:
+
+<input type="text" disabled>
+
+<input type="checkbox" checked>
+
+<input type="text" required>
+
+<button type="button" disabled>
+    Submit
+</button>
+
+Important:
+Writing disabled="false" does NOT enable the
+element. The presence of the attribute still
+makes it true.
+
+To enable the element, remove the disabled attribute.
+
+
+10. What is Proper HTML Nesting?
+
+Nesting means placing one HTML element inside
+another HTML element.
+
+Example:
+
+<div>
+    <h1>Employee Details</h1>
+    <p>Employee Name: Sneha</p>
+</div>
+
+Here:
+- div is the parent element.
+- h1 and p are child elements.
+
+Proper nesting means closing elements in the
+correct order.
+
+Correct:
+
+<p>This is <strong>important</strong> text.</p>
+
+Incorrect:
+
+<p>This is <strong>important</p></strong>
+
+Always close nested elements in reverse order
+of opening them.
+
+
+11. What are Parent, Child and Sibling Elements?
+
+Consider:
+
+<div>
+    <h1>Employee Management</h1>
+    <p>Employee Details</p>
+</div>
+
+- div = Parent element.
+- h1 and p = Child elements.
+- h1 and p = Sibling elements.
+
+Sibling elements share the same parent.
+
+
+12. What are Custom Data Attributes?
+
+Custom data attributes allow developers to store
+additional information in HTML elements.
+
+They begin with data-.
+
+Example:
+
+<button data-employee-id="101">
+    View Employee
+</button>
+
+JavaScript:
+
+const button = document.querySelector("button");
+
+console.log(button.dataset.employeeId);
+
+Output:
+101
+
+They are useful for storing custom data that
+JavaScript can access.
+
+
+==================================================
+INTERVIEW QUICK REVISION
+==================================================
+
+Q1. What is the difference between a tag and
+an element?
+
+A tag is the markup enclosed within angle brackets.
+An element is the complete structure consisting
+of tags and content.
+
+Q2. What are void elements?
+
+Void elements are HTML elements that cannot
+contain child elements and do not have closing tags.
+
+Examples: img, br, hr and input.
+
+Q3. What is the difference between id and class?
+
+id identifies a specific element and is intended
+to be unique. class can be shared by multiple
+elements.
+
+Q4. Can multiple elements have the same class?
+
+Yes. Multiple elements can share the same class.
+
+Q5. Can multiple elements have the same id?
+
+HTML requires an id to be unique within a document.
+Duplicate IDs should be avoided.
+
+Q6. What are global attributes?
+
+Attributes that can be used on most HTML elements,
+such as id, class, style and title.
+
+Q7. What are Boolean attributes?
+
+Attributes whose presence represents true and
+whose absence represents false.
+
+Examples: disabled, checked and required.
+
+Q8. What is nesting in HTML?
+
+Nesting means placing an HTML element inside
+another HTML element.
+
+Q9. What is the purpose of the alt attribute?
+
+It provides alternative text for images and
+improves accessibility.
+
+Q10. What is the difference between an attribute
+and an element?
+
+An element defines a complete HTML structure.
+An attribute provides additional information
+or configuration to an element.
+
+Q11. What is contenteditable?
+
+It is a global attribute that allows users to
+edit the content of an HTML element directly
+in the browser.
+
+Q12. What is data-*?
+
+It is a custom HTML attribute used to store
+additional information on an element.
+
+
+==================================================
+END OF SECTION 3
+==================================================
+
+==================================================
 END OF SECTION 2
 ==================================================
 
