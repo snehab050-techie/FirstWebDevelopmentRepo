@@ -2522,3 +2522,113 @@ Use HTTPS to protect data in transit.
     <button type="submit">Register</button>
 
 </form>
+
+
+<!-- 1. What is Semantic HTML?
+
+Semantic HTML means using HTML tags that clearly describe
+the purpose of their content.
+
+Examples:
+<header>, <nav>, <main>, <section>, <article>, <footer>
+
+These tags help:
+- Improve code readability.
+- Improve accessibility.
+- Help search engines understand page structure (SEO).
+
+
+<!-- 2. Important Semantic Tags -->
+
+<header>
+    <h1>My Website</h1>
+</header>
+
+<!-- Contains navigation links -->
+<nav>
+    <a href="/home">Home</a>
+    <a href="/about">About</a>
+</nav>
+
+<!-- Contains the main content of the page -->
+<main>
+    <h2>Welcome</h2>
+</main>
+
+<!-- Groups related content -->
+<section>
+    <h2>About Us</h2>
+    <p>Information about our company.</p>
+</section>
+
+<!-- Independent, self-contained content -->
+<article>
+    <h2>HTML Tutorial</h2>
+    <p>Learn HTML basics.</p>
+</article>
+
+<!-- Additional or indirectly related content -->
+<aside>
+    <h3>Related Links</h3>
+</aside>
+
+<!-- Footer information -->
+<footer>
+    <p>Copyright 2026</p>
+</footer>
+
+
+<!-- 3. Complete Semantic HTML Structure -->
+
+<body>
+
+    <header>
+        <h1>My Website</h1>
+    </header>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>About HTML</h2>
+            <p>HTML structures web pages.</p>
+        </section>
+
+        <article>
+            <h2>Latest Article</h2>
+            <p>Learn semantic HTML.</p>
+        </article>
+
+        <aside>
+            <p>Related information</p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>Copyright 2026</p>
+    </footer>
+
+</body>
+
+
+<!-- 4. Semantic vs Non-Semantic Elements
+
+Semantic elements:
+<header>, <footer>, <article>, <section>
+
+Non-semantic elements:
+<div>, <span>
+
+<div>:
+A generic block-level container.
+
+<span>:
+A generic inline container.
+
+Use semantic elements when they describe the content's
+meaning. Use div and span when no semantic element fits.
