@@ -2220,3 +2220,179 @@ The start attribute.
 ==================================================
 END OF SECTION 6
 ==================================================
+
+
+==================================================
+SECTION 7: HTML TABLES
+==================================================
+
+1. What are HTML Tables?
+
+HTML tables are used to display data in rows
+and columns.
+
+2. Important Table Tags
+
+<table> - Creates a table.
+<tr> - Defines a table row.
+<th> - Defines a table header cell.
+<td> - Defines a table data cell.
+<thead> - Groups table header content.
+<tbody> - Groups table body content.
+<tfoot> - Groups table footer content.
+<caption> - Defines a table caption.
+
+3. Basic Table Example
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Role</th>
+    </tr>
+
+    <tr>
+        <td>101</td>
+        <td>Sneha</td>
+        <td>Java Developer</td>
+    </tr>
+
+    <tr>
+        <td>102</td>
+        <td>Rahul</td>
+        <td>Tester</td>
+    </tr>
+</table>
+
+4. Table Structure
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>101</td>
+            <td>Sneha</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="2">Total Employees: 1</td>
+        </tr>
+    </tfoot>
+</table>
+
+5. What is colspan?
+
+colspan is used to merge multiple columns
+into one cell.
+
+Example:
+
+<td colspan="2">Employee Details</td>
+
+6. What is rowspan?
+
+rowspan is used to merge multiple rows
+into one cell.
+
+Example:
+
+<td rowspan="2">Java Developer</td>
+
+7. What is the caption Tag?
+
+It provides a title or description for a table.
+
+Example:
+
+<table>
+    <caption>Employee Details</caption>
+</table>
+
+8. What is the scope Attribute?
+
+It specifies whether a header cell applies
+to a row, column, row group or column group.
+
+Common values:
+
+scope="row"
+scope="col"
+scope="rowgroup"
+scope="colgroup"
+
+Example:
+
+<th scope="col">Employee Name</th>
+
+9. Styling HTML Tables
+
+CSS is used to style HTML tables.
+
+Example:
+
+<table style="border-collapse: collapse;
+              width: 100%;">
+
+    <tr>
+        <th>Name</th>
+        <th>Role</th>
+    </tr>
+
+    <tr>
+        <td>Sneha</td>
+        <td>Developer</td>
+    </tr>
+
+</table>
+
+==================================================
+INTERVIEW QUICK REVISION
+==================================================
+
+Q1. Which tag creates a table?
+<table>
+
+Q2. Difference between tr, th and td?
+
+tr - Table row.
+th - Header cell.
+td - Data cell.
+
+Q3. Difference between thead and tbody?
+
+thead groups header rows.
+tbody groups the main data rows.
+
+Q4. What is colspan?
+
+It merges multiple columns into one cell.
+
+Q5. What is rowspan?
+
+It merges multiple rows into one cell.
+
+Q6. What is the purpose of caption?
+
+It provides a title or description for a table.
+
+Q7. Can we create a table inside another table?
+
+Yes. Nested tables are possible, although
+they should be avoided unless necessary.
+
+Q8. What is the purpose of scope?
+
+It identifies which cells a table header
+is associated with, improving accessibility.
+
+==================================================
+END OF SECTION 7
+==================================================
