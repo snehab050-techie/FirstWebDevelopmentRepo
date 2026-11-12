@@ -2396,3 +2396,129 @@ is associated with, improving accessibility.
 ==================================================
 END OF SECTION 7
 ==================================================
+
+
+<!-- 1. What is an HTML Form?
+A form is used to collect user input and submit data to a server.
+
+<form action="/submit" method="POST">
+    Form elements go here
+</form>
+
+action: URL where form data is sent.
+method: HTTP method used to send data (GET or POST).
+
+
+<!-- 2. Common Input Types -->
+
+<input type="text" placeholder="Enter name">
+<input type="password" placeholder="Enter password">
+<input type="email" placeholder="Enter email">
+<input type="number" placeholder="Enter age">
+<input type="date">
+<input type="file">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+
+
+<!-- 3. Label Element
+A label describes an input field.
+The for attribute must match the input's id.
+
+<label for="username">Username:</label>
+<input type="text" id="username" name="username">
+
+
+<!-- 4. Radio Buttons
+Used when the user must select only ONE option.
+Radio buttons in a group must have the same name.
+
+<input type="radio" id="male" name="gender" value="Male">
+<label for="male">Male</label>
+
+<input type="radio" id="female" name="gender" value="Female">
+<label for="female">Female</label>
+
+
+<!-- 5. Checkboxes
+Used when the user can select MULTIPLE options.
+
+<input type="checkbox" id="java" name="skills" value="Java">
+<label for="java">Java</label>
+
+<input type="checkbox" id="sql" name="skills" value="SQL">
+<label for="sql">SQL</label>
+
+
+<!-- 6. Textarea
+Used for multi-line text input.
+
+<textarea name="message" rows="4" cols="30"></textarea>
+
+
+<!-- 7. Select and Option
+Used to create a dropdown list.
+
+<select name="city">
+    <option value="bangalore">Bangalore</option>
+    <option value="mysore">Mysore</option>
+    <option value="chennai">Chennai</option>
+</select>
+
+
+<!-- 8. Button
+Different button types:
+
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+<button type="button">Click Me</button>
+
+Note: A button inside a form defaults to submit
+if its type is not specified.
+
+
+<!-- 9. Important Input Attributes
+
+name       - Key used when submitting form data.
+id         - Unique identifier for an element.
+value      - Value submitted with the form.
+placeholder - Hint displayed inside an input.
+required   - Makes the field mandatory.
+readonly   - Cannot be edited, but is submitted.
+disabled   - Cannot be edited and is NOT submitted.
+min / max  - Minimum and maximum allowed values.
+minlength / maxlength - Text length limits.
+
+
+<!-- 10. GET vs POST
+
+GET:
+- Sends form data as URL query parameters.
+- Suitable for searches and retrieving data.
+- Data is visible in the URL.
+
+POST:
+- Sends form data in the request body.
+- Suitable for submitting or creating data.
+- Data is not displayed in the URL.
+
+Note: POST alone does not encrypt data.
+Use HTTPS to protect data in transit.
+
+
+<!-- 11. Complete Form Example -->
+
+<form action="/register" method="POST">
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit">Register</button>
+
+</form>
