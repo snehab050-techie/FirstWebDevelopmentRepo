@@ -2051,3 +2051,172 @@ Example:
 ==================================================
 END OF SECTION 5
 ==================================================
+
+
+==================================================
+SECTION 6: HTML LISTS
+==================================================
+
+1. What are HTML Lists?
+
+HTML lists are used to display related items
+in an organized format.
+
+HTML provides three types of lists:
+
+- Ordered List
+- Unordered List
+- Description List
+
+
+2. Ordered List (<ol>)
+
+Displays items in a numbered sequence.
+
+Example:
+
+<ol>
+    <li>Java</li>
+    <li>HTML</li>
+    <li>CSS</li>
+</ol>
+
+Output:
+1. Java
+2. HTML
+3. CSS
+
+3. Unordered List (<ul>)
+
+Displays items with bullet points.
+
+Example:
+
+<ul>
+    <li>Java</li>
+    <li>HTML</li>
+    <li>CSS</li>
+</ul>
+
+4. List Item (<li>)
+
+The <li> tag defines an individual item
+inside an ordered or unordered list.
+
+
+5. Ordered List Attributes
+
+type:
+Specifies the numbering style.
+
+- type="1" - Numbers
+- type="A" - Uppercase letters
+- type="a" - Lowercase letters
+- type="I" - Uppercase Roman numbers
+- type="i" - Lowercase Roman numbers
+
+start:
+Specifies the starting number.
+
+Example:
+
+<ol type="A" start="3">
+    <li>Java</li>
+    <li>Spring Boot</li>
+</ol>
+
+Output:
+C. Java
+D. Spring Boot
+
+
+6. Nested Lists
+
+A list placed inside another list is called
+a nested list.
+
+Example:
+
+<ul>
+    <li>Programming
+        <ul>
+            <li>Java</li>
+            <li>Python</li>
+        </ul>
+    </li>
+    <li>Database
+        <ul>
+            <li>MySQL</li>
+            <li>Oracle</li>
+        </ul>
+    </li>
+</ul>
+
+
+7. Description List (<dl>)
+
+Used to display terms along with their descriptions.
+
+Tags:
+
+<dl> - Defines the description list.
+<dt> - Defines the term.
+<dd> - Defines the description.
+
+Example:
+
+<dl>
+    <dt>HTML</dt>
+    <dd>Defines webpage structure.</dd>
+
+    <dt>CSS</dt>
+    <dd>Defines webpage styling.</dd>
+</dl>
+
+
+8. Difference Between ol, ul and dl
+
+ol - Numbered list.
+ul - Bulleted list.
+dl - Term and description list.
+
+
+==================================================
+INTERVIEW QUICK REVISION
+==================================================
+
+Q1. How many types of lists are available in HTML?
+
+Three: Ordered, Unordered and Description lists.
+
+Q2. What is the difference between ol and ul?
+
+ol displays numbered items.
+ul displays bulleted items.
+
+Q3. What is the purpose of li?
+
+It defines an individual list item.
+
+Q4. What is a nested list?
+
+A list placed inside another list.
+
+Q5. What are dt and dd?
+
+dt defines a term.
+dd provides its description.
+
+Q6. Can we create a nested list?
+
+Yes. We can place another ul or ol inside
+an li element.
+
+Q7. Which attribute changes the starting
+number of an ordered list?
+
+The start attribute.
+
+==================================================
+END OF SECTION 6
+==================================================
