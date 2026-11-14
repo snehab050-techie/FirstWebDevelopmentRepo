@@ -1,0 +1,2634 @@
+==================================================
+SECTION 1: INTRODUCTION TO HTML
+==================================================
+
+1. What is HTML?
+
+HTML stands for HyperText Markup Language.
+
+It is the standard markup language used to create
+the structure of web pages.
+
+HTML tells the browser how to organize and display
+content such as:
+
+- Headings
+- Paragraphs
+- Images
+- Links
+- Tables
+- Forms
+- Buttons
+
+Example:
+
+When we open a website, HTML defines the structure
+of the page, CSS handles its appearance, and
+JavaScript adds interactivity.
+
+
+2. Why is HTML used?
+
+- To create the structure of web pages.
+- To display text, images, videos and links.
+- To create forms for collecting user information.
+- To organize website content.
+- To provide semantic meaning to web content.
+- To work with CSS and JavaScript in frontend development.
+
+
+3. Is HTML a Programming Language?
+
+No. HTML is NOT a programming language.
+
+HTML is a markup language.
+
+Reason:
+
+A programming language contains programming logic
+such as conditions, loops and calculations.
+
+HTML does not provide programming logic.
+It defines the structure and meaning of content.
+
+Example:
+
+HTML:
+<h1>Hello World</h1>
+
+This displays a heading on the webpage.
+
+Java:
+if (age >= 18) {
+    System.out.println("Eligible");
+}
+
+This executes conditional logic.
+
+
+4. What is HyperText?
+
+HyperText means text that contains links
+to other documents or web pages.
+
+Example:
+
+Clicking a link on one webpage and navigating
+to another webpage is an example of HyperText.
+
+
+5. What is a Markup Language?
+
+A markup language uses tags or special instructions
+to define the structure and presentation of content.
+
+Example:
+
+<p>This is a paragraph.</p>
+
+Here:
+- <p> identifies the paragraph.
+- The browser understands that the content
+  represents a paragraph.
+
+
+6. How does HTML work?
+
+1. A developer writes HTML code.
+2. The HTML file is saved with a .html extension.
+3. The browser reads the HTML file.
+4. The browser parses the HTML.
+5. The browser creates the DOM (Document Object Model).
+6. The browser displays the webpage.
+
+Examples of browsers:
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Edge
+- Safari
+
+
+7. What is the role of HTML, CSS and JavaScript?
+
+HTML:
+Defines the structure of a webpage.
+
+CSS:
+Controls the appearance, layout, colors,
+fonts and styling of a webpage.
+
+JavaScript:
+Adds dynamic behavior and interactivity.
+
+Easy way to remember:
+
+HTML = Structure
+CSS = Styling
+JavaScript = Behavior
+
+
+8. What is an HTML file?
+
+An HTML file is a text file containing HTML code.
+
+It is generally saved with the .html extension.
+
+Examples:
+- index.html
+- about.html
+- contact.html
+
+The index.html file is commonly used as the
+default entry page of a website.
+
+
+9. What are HTML tags?
+
+HTML tags are keywords enclosed within angle
+brackets that tell the browser how to interpret
+different types of content.
+
+Example:
+
+<h1>Welcome</h1>
+
+Opening tag: <h1>
+Content: Welcome
+Closing tag: </h1>
+
+
+10. What are HTML elements?
+
+An HTML element generally consists of:
+
+Opening tag + Content + Closing tag
+
+Example:
+
+<p>Hello World</p>
+
+The complete structure is called an HTML element.
+
+
+11. What is the difference between HTML and HTML5?
+
+HTML5 is the fifth major version of HTML.
+
+HTML5 introduced several features, including:
+
+- Semantic elements such as header, footer and article.
+- Native audio and video support.
+- Canvas and SVG support.
+- Improved form input types.
+- Local storage and session storage.
+- Better support for modern web applications.
+
+
+==================================================
+INTERVIEW QUICK REVISION
+==================================================
+
+Q1. What is HTML?
+HTML is a markup language used to define the
+structure of web pages.
+
+Q2. Is HTML a programming language?
+No. It is a markup language because it defines
+the structure of content rather than executing
+programming logic.
+
+Q3. What is the full form of HTML?
+HyperText Markup Language.
+
+Q4. What is the difference between HTML and HTML5?
+HTML5 is a newer version that introduced semantic
+elements, multimedia support, improved forms
+and modern browser capabilities.
+
+Q5. What is the role of a browser?
+A browser reads HTML, CSS and JavaScript,
+processes them and displays the webpage.
+
+Q6. What is the difference between a tag and
+an element?
+
+A tag is the markup enclosed within angle brackets.
+An element generally includes the opening tag,
+content and closing tag.
+
+==================================================
+END OF SECTION 1
+==================================================
+
+
+==================================================
+SECTION 2: HTML DOCUMENT STRUCTURE
+==================================================
+
+1. Basic Structure of an HTML Document
+
+Every HTML document follows a standard structure.
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Webpage</title>
+</head>
+<body>
+
+    <h1>Welcome to HTML</h1>
+    <p>This is my first webpage.</p>
+
+</body>
+</html>
+
+
+2. Explanation of Each HTML Tag
+
+<!DOCTYPE html>
+
+- It is called the DOCTYPE declaration.
+- It tells the browser that the document uses HTML5.
+- It helps the browser render the webpage in standards mode.
+- It is not an HTML tag or an HTML element.
+
+<html>
+
+- It is the root element of an HTML document.
+- All other HTML elements are placed inside it.
+- It contains two main sections: head and body.
+
+<head>
+
+- Contains metadata and resources about the webpage.
+- Metadata means information about the HTML document.
+- Its contents are generally not displayed directly
+  on the webpage.
+
+Examples:
+- Page title
+- Character encoding
+- Viewport settings
+- CSS file references
+- SEO-related metadata
+
+<title>
+
+- Defines the title of the webpage.
+- The title appears in the browser tab.
+- It is important for SEO and user experience.
+
+<body>
+
+- Contains the actual visible content of the webpage.
+- Everything we want to display to users is generally
+  written inside the body.
+
+Examples:
+- Headings
+- Paragraphs
+- Images
+- Tables
+- Forms
+- Buttons
+
+
+3. What is the difference between Head and Body?
+
+HEAD:
+- Contains metadata about the webpage.
+- Includes title, meta tags and CSS references.
+- Content is generally not directly visible.
+
+BODY:
+- Contains the actual webpage content.
+- Displays text, images, links, forms, etc.
+- Visible to users.
+
+
+4. What is the lang Attribute?
+
+The lang attribute specifies the language of the
+HTML document.
+
+Example:
+
+<html lang="en">
+
+Here:
+- lang is an HTML attribute.
+- en represents English.
+
+Other examples:
+- en = English
+- hi = Hindi
+- fr = French
+- de = German
+
+Why is it used?
+
+- Helps screen readers identify the language.
+- Helps search engines understand the page language.
+- Helps browsers process language-specific content.
+
+
+5. What are Meta Tags?
+
+Meta tags provide information about an HTML document.
+
+They are written inside the head section.
+
+Meta tags are generally not visible on the webpage.
+
+Important Meta Tags:
+
+A. Character Encoding
+
+<meta charset="UTF-8">
+
+- Specifies the character encoding.
+- UTF-8 supports most characters and symbols
+  used across different languages.
+
+B. Viewport Meta Tag
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+- Helps webpages adjust to different screen sizes.
+- Important for responsive web design.
+- width=device-width sets the viewport width
+  to the device's width.
+- initial-scale=1.0 sets the initial zoom level.
+
+C. Description Meta Tag
+
+<meta name="description"
+      content="Learn HTML from beginner to advanced">
+
+- Provides a short description of the webpage.
+- Search engines may use it in search result snippets.
+
+D. Author Meta Tag
+
+<meta name="author" content="Your Name">
+
+- Specifies the author of the webpage.
+
+
+6. What is the Difference Between Title and Meta Description?
+
+TITLE:
+- Defines the title of the webpage.
+- Appears in the browser tab.
+- Can appear as the clickable title in search results.
+
+META DESCRIPTION:
+- Provides a short summary of the webpage.
+- May appear below the title in search results.
+
+
+7. Linking an External CSS File
+
+We use the <link> tag to connect an external
+CSS file with an HTML document.
+
+Example:
+
+<link rel="stylesheet" href="style.css">
+
+Explanation:
+
+rel="stylesheet"
+- Specifies that the linked resource is a stylesheet.
+
+href="style.css"
+- Specifies the location of the CSS file.
+
+The link element is written inside the head section.
+
+
+8. Adding JavaScript to HTML
+
+We use the <script> tag to include JavaScript.
+
+Example:
+
+<script src="script.js"></script>
+
+Explanation:
+
+src:
+- Specifies the location of the JavaScript file.
+
+The script tag can be placed in the head or body.
+
+For better loading behavior, we can use defer:
+
+<script src="script.js" defer></script>
+
+defer:
+- Downloads the JavaScript file while HTML parsing
+  continues.
+- Executes the script after HTML parsing is complete.
+- Deferred scripts execute in document order.
+
+
+9. What is the Difference Between HTML Tags
+and HTML Attributes?
+
+TAGS:
+Tags define HTML elements.
+
+Example:
+<p>Hello</p>
+
+ATTRIBUTES:
+Attributes provide additional information
+or configuration to HTML elements.
+
+Example:
+<p id="message">Hello</p>
+
+Here:
+- p = HTML tag
+- id = attribute
+- message = attribute value
+
+
+10. Complete HTML5 Boilerplate
+
+A boilerplate is a standard starting template
+used when creating a new HTML page.
+
+Example:
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="My first HTML webpage">
+
+    <title>My First Webpage</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <h1>Hello World!</h1>
+    <p>Welcome to my website.</p>
+
+</body>
+
+</html>
+
+
+==================================================
+INTERVIEW QUICK REVISION
+==================================================
+
+Q1. What is <!DOCTYPE html>?
+
+It is a declaration that tells the browser to
+interpret the document using HTML5 standards mode.
+
+Q2. What is the root element of HTML?
+
+The <html> element is the root element of an
+HTML document.
+
+Q3. What is the difference between head and body?
+
+Head contains metadata and resource references.
+Body contains the actual webpage content.
+
+Q4. What is the purpose of the viewport meta tag?
+
+It helps webpages adjust their layout to different
+device screen sizes.
+
+Q5. Why do we use UTF-8?
+
+UTF-8 supports a wide range of characters,
+symbols and languages.
+
+Q6. What is the purpose of the title tag?
+
+It defines the webpage title displayed in the
+browser tab.
+
+Q7. What is an HTML boilerplate?
+
+It is a standard HTML document template that
+provides the basic structure for a webpage.
+
+Q8. What is the purpose of the defer attribute?
+
+It allows the browser to download JavaScript
+while parsing HTML and execute it after HTML
+parsing is complete.
+
+Q9. Can we have multiple head and body elements
+in one HTML document?
+
+No. A normal HTML document has one head element
+and one body element.
+
+Q10. Is the DOCTYPE declaration an HTML tag?
+
+No. It is a declaration that identifies the
+document type and rendering mode.
+
+==================================================
+END OF SECTION 2
+==================================================
+
+
+==================================================
+SECTION 3: HTML TAGS, ELEMENTS AND ATTRIBUTES
+==================================================
+
+1. What are HTML Tags?
+
+HTML tags are keywords enclosed within angle brackets
+(< >) that define the structure and meaning of content.
+
+Example:
+
+<h1>Welcome</h1>
+
+Here:
+- <h1> is the opening tag.
+- </h1> is the closing tag.
+
+Tags tell the browser how to interpret the content.
+
+
+2. What are HTML Elements?
+
+An HTML element generally consists of:
+
+Opening Tag + Content + Closing Tag
+
+Example:
+
+<p>Hello World</p>
+
+Here:
+- <p> = Opening tag
+- Hello World = Content
+- </p> = Closing tag
+
+The complete structure is called an HTML element.
+
+Important:
+An element is the complete unit, whereas a tag
+is the markup used to define that element.
+
+
+3. Difference Between HTML Tags and Elements
+
+HTML TAG:
+- Represents the markup enclosed within angle brackets.
+- Example: <p> and </p>
+
+HTML ELEMENT:
+- Represents the complete structure.
+- Includes opening tag, content and closing tag.
+- Example: <p>Hello World</p>
+
+
+4. Types of HTML Elements Based on Tags
+
+HTML elements can be broadly classified into:
+
+A. Paired Elements (Container Elements)
+
+- Have an opening tag and a closing tag.
+- Content is placed between these tags.
+
+Examples:
+
+<h1>Heading</h1>
+<p>Paragraph</p>
+<div>Container</div>
+<span>Inline content</span>
+
+
+B. Empty Elements (Void Elements)
+
+- Do not have closing tags.
+- Cannot contain child elements.
+- Used for specific purposes.
+
+Examples:
+
+<br>       <!-- Line break -->
+<hr>       <!-- Horizontal line -->
+<img>      <!-- Image -->
+<input>    <!-- Input field -->
+<meta>     <!-- Metadata -->
+<link>     <!-- External resource -->
+<area>
+<source>
+<embed>
+<wbr>
+
+
+Note:
+In HTML5, void elements do not require a closing
+slash. For example, <br> is valid.
+
+You may also see <br />, but the slash is optional.
+
+
+5. What are HTML Attributes?
+
+Attributes provide additional information or
+configuration to HTML elements.
+
+They are generally specified in the opening tag.
+
+Syntax:
+
+<tagname attribute="value">Content</tagname>
+
+Example:
+
+<p id="message" class="info">
+    Hello World
+</p>
+
+Here:
+- id = Attribute name
+- message = Attribute value
+- class = Attribute name
+- info = Attribute value
+
+Attributes help control the behavior, identification
+and configuration of HTML elements.
+
+
+6. Commonly Used HTML Attributes
+
+A. id
+
+- Gives an element a unique identifier.
+- Commonly used in CSS and JavaScript.
+
+Example:
+
+<p id="username">Sneha</p>
+
+
+B. class
+
+- Groups multiple elements under a common name.
+- Commonly used for CSS styling and JavaScript.
+
+Example:
+
+<p class="info">First paragraph</p>
+<p class="info">Second paragraph</p>
+
+
+C. style
+
+- Applies inline CSS directly to an element.
+
+Example:
+
+<p style="color: blue;">Hello World</p>
+
+
+D. title
+
+- Provides additional information about an element.
+- Commonly displayed as a tooltip on hover.
+
+Example:
+
+<p title="This is additional information">
+    Hover over me
+</p>
+
+
+E. href
+
+- Specifies the destination URL of a hyperlink.
+- Used with the anchor element.
+
+Example:
+
+<a href="https://www.google.com">Google</a>
+
+
+F. src
+
+- Specifies the source location of an external resource.
+- Commonly used with images, audio and scripts.
+
+Example:
+
+<img src="photo.jpg" alt="My Photo">
+
+
+G. alt
+
+- Provides alternative text for an image.
+- Helps screen readers understand the image.
+- Displayed when an image cannot be loaded.
+
+Example:
+
+<img src="logo.png" alt="Company Logo">
+
+
+7. What are Global Attributes?
+
+Global attributes are attributes that can be used
+on most HTML elements.
+
+Important global attributes:
+
+- id
+- class
+- style
+- title
+- hidden
+- lang
+- data-*
+- tabindex
+- contenteditable
+- draggable
+- dir
+
+Example:
+
+<p contenteditable="true">
+    You can edit this paragraph.
+</p>
+
+The contenteditable attribute allows users to
+edit the content directly in the browser.
+
+
+8. Difference Between id and class
+
+id:
+- Used to identify a specific element.
+- Intended to be unique within an HTML document.
+- Selected in CSS using #.
+
+class:
+- Used to group multiple elements.
+- Can be reused across multiple elements.
+- Selected in CSS using .
+
+Example:
+
+<p id="heading">Welcome</p>
+
+<p class="info">First paragraph</p>
+<p class="info">Second paragraph</p>
+
+CSS:
+
+#heading {
+    color: blue;
+}
+
+.info {
+    color: green;
+}
+
+
+9. What are Boolean Attributes?
+
+Boolean attributes represent true or false
+based on their presence or absence.
+
+If the attribute is present, it is considered true.
+If it is absent, it is considered false.
+
+Examples:
+
+<input type="text" disabled>
+
+<input type="checkbox" checked>
+
+<input type="text" required>
+
+<button type="button" disabled>
+    Submit
+</button>
+
+Important:
+Writing disabled="false" does NOT enable the
+element. The presence of the attribute still
+makes it true.
+
+To enable the element, remove the disabled attribute.
+
+
+10. What is Proper HTML Nesting?
+
+Nesting means placing one HTML element inside
+another HTML element.
+
+Example:
+
+<div>
+    <h1>Employee Details</h1>
+    <p>Employee Name: Sneha</p>
+</div>
+
+Here:
+- div is the parent element.
+- h1 and p are child elements.
+
+Proper nesting means closing elements in the
+correct order.
+
+Correct:
+
+<p>This is <strong>important</strong> text.</p>
+
+Incorrect:
+
+<p>This is <strong>important</p></strong>
+
+Always close nested elements in reverse order
+of opening them.
+
+
+11. What are Parent, Child and Sibling Elements?
+
+Consider:
+
+<div>
+    <h1>Employee Management</h1>
+    <p>Employee Details</p>
+</div>
+
+- div = Parent element.
+- h1 and p = Child elements.
+- h1 and p = Sibling elements.
+
+Sibling elements share the same parent.
+
+
+12. What are Custom Data Attributes?
+
+Custom data attributes allow developers to store
+additional information in HTML elements.
+
+They begin with data-.
+
+Example:
+
+<button data-employee-id="101">
+    View Employee
+</button>
+
+JavaScript:
+
+const button = document.querySelector("button");
+
+console.log(button.dataset.employeeId);
+
+Output:
+101
+
+They are useful for storing custom data that
+JavaScript can access.
+
+
+==================================================
+INTERVIEW QUICK REVISION
+==================================================
+
+Q1. What is the difference between a tag and
+an element?
+
+A tag is the markup enclosed within angle brackets.
+An element is the complete structure consisting
+of tags and content.
+
+Q2. What are void elements?
+
+Void elements are HTML elements that cannot
+contain child elements and do not have closing tags.
+
+Examples: img, br, hr and input.
+
+Q3. What is the difference between id and class?
+
+id identifies a specific element and is intended
+to be unique. class can be shared by multiple
+elements.
+
+Q4. Can multiple elements have the same class?
+
+Yes. Multiple elements can share the same class.
+
+Q5. Can multiple elements have the same id?
+
+HTML requires an id to be unique within a document.
+Duplicate IDs should be avoided.
+
+Q6. What are global attributes?
+
+Attributes that can be used on most HTML elements,
+such as id, class, style and title.
+
+Q7. What are Boolean attributes?
+
+Attributes whose presence represents true and
+whose absence represents false.
+
+Examples: disabled, checked and required.
+
+Q8. What is nesting in HTML?
+
+Nesting means placing an HTML element inside
+another HTML element.
+
+Q9. What is the purpose of the alt attribute?
+
+It provides alternative text for images and
+improves accessibility.
+
+Q10. What is the difference between an attribute
+and an element?
+
+An element defines a complete HTML structure.
+An attribute provides additional information
+or configuration to an element.
+
+Q11. What is contenteditable?
+
+It is a global attribute that allows users to
+edit the content of an HTML element directly
+in the browser.
+
+Q12. What is data-*?
+
+It is a custom HTML attribute used to store
+additional information on an element.
+
+
+==================================================
+END OF SECTION 3
+==================================================
+
+
+==================================================
+SECTION 4: HTML HEADINGS, PARAGRAPHS AND TEXT FORMATTING
+==================================================
+
+1. HTML Headings
+
+HTML provides six levels of headings, from h1 to h6.
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+Explanation:
+
+- h1 represents the most important heading.
+- h6 represents the least important heading.
+- h1 to h6 define the heading hierarchy.
+- Browsers display headings with different default sizes.
+
+Important Points:
+
+- Use headings to organize webpage content.
+- Generally, use one main h1 heading per page.
+- Do not choose heading levels only based on their size.
+- Maintain a logical heading hierarchy.
+
+Example:
+
+<h1>Employee Management System</h1>
+
+<h2>Employee Details</h2>
+
+<h3>Personal Information</h3>
+
+<h3>Contact Information</h3>
+
+<h2>Department Details</h2>
+
+
+2. HTML Paragraph Tag
+
+The <p> tag defines a paragraph.
+
+Example:
+
+<p>
+    HTML is used to create the structure
+    of web pages.
+</p>
+
+Important Points:
+
+- Browsers automatically add spacing before
+  and after paragraphs.
+- Browsers ignore extra spaces and line breaks
+  in normal HTML text.
+- Paragraphs are block-level elements.
+
+
+3. HTML Line Break Tag - <br>
+
+The <br> tag inserts a line break.
+
+Example:
+
+<p>
+    Hello Sneha!<br>
+    Welcome to HTML learning.
+</p>
+
+Output:
+
+Hello Sneha!
+Welcome to HTML learning.
+
+Important Points:
+
+- It is a void element.
+- It does not require a closing tag.
+- It is useful when a line break is meaningful,
+  such as in addresses or poetry.
+- Avoid using multiple br tags for page spacing.
+  Use CSS for layout and spacing.
+
+
+4. HTML Horizontal Rule Tag - <hr>
+
+The <hr> tag represents a thematic break
+between content sections.
+
+Example:
+
+<h2>Employee Details</h2>
+
+<p>Personal information.</p>
+
+<hr>
+
+<h2>Department Details</h2>
+
+<p>Department information.</p>
+
+Important Points:
+
+- It is a void element.
+- It generally displays a horizontal line.
+- It represents a thematic change in content.
+
+
+5. HTML Text Formatting Elements
+
+HTML provides several elements to format text
+and communicate its meaning.
+
+A. <b> - Bold Text
+
+Displays text in bold without adding special
+importance or emphasis.
+
+Example:
+
+<p>This is <b>bold text</b>.</p>
+
+
+B. <strong> - Important Text
+
+Indicates that the content has strong importance.
+
+Browsers generally display it in bold.
+
+Example:
+
+<p><strong>Warning:</strong> Do not share passwords.</p>
+
+
+C. <i> - Italic Text
+
+Represents text in an alternate voice or mood,
+such as technical terms or foreign words.
+
+Example:
+
+<p>This is an <i>italic</i> word.</p>
+
+
+D. <em> - Emphasized Text
+
+Indicates stress emphasis on particular content.
+
+Browsers generally display it in italics.
+
+Example:
+
+<p>You <em>must</em> complete the task.</p>
+
+
+E. <mark> - Highlighted Text
+
+Highlights text that is relevant in a particular context.
+
+Example:
+
+<p>Learn <mark>HTML</mark> for frontend development.</p>
+
+
+F. <small> - Smaller Text
+
+Represents side comments or small print.
+
+Example:
+
+<p>Price: ₹999</p>
+<p><small>Terms and conditions apply.</small></p>
+
+
+G. <del> - Deleted Text
+
+Represents text that has been deleted from a document.
+
+Browsers generally display a strikethrough.
+
+Example:
+
+<p>Price: <del>₹1500</del> ₹999</p>
+
+
+H. <ins> - Inserted Text
+
+Represents text that has been inserted into a document.
+
+Browsers generally display it with an underline.
+
+Example:
+
+<p>Price: ₹999 <ins>Limited offer</ins></p>
+
+
+I. <sub> - Subscript Text
+
+Displays text slightly below the normal text line.
+
+Example:
+
+<p>Water formula: H<sub>2</sub>O</p>
+
+Output:
+H₂O
+
+
+J. <sup> - Superscript Text
+
+Displays text slightly above the normal text line.
+
+Example:
+
+<p>Mathematical expression: X<sup>2</sup></p>
+
+Output:
+X²
+
+
+K. <u> - Underlined Text
+
+Represents text with a non-textual annotation
+or an underline-style presentation.
+
+Example:
+
+<p>This is <u>underlined text</u>.</p>
+
+
+L. <code> - Computer Code
+
+Represents a short piece of computer code.
+
+Example:
+
+<p>Use the <code>System.out.println()</code>
+method in Java.</p>
+
+
+M. <pre> - Preformatted Text
+
+Displays text while preserving spaces and line breaks.
+
+Example:
+
+<pre>
+Name: Sneha
+Role: Java Developer
+Experience: 4 Years
+</pre>
+
+Important:
+- Spaces and line breaks are preserved.
+- Commonly used for displaying code or preformatted text.
+
+
+N. <blockquote> - Block Quotation
+
+Represents a section quoted from another source.
+
+Example:
+
+<blockquote>
+    HTML provides the structure of a webpage.
+</blockquote>
+
+
+O. <q> - Inline Quotation
+
+Represents a short quotation inside a sentence.
+
+Example:
+
+<p>He said, <q>Practice makes perfect.</q></p>
+
+
+P. <abbr> - Abbreviation
+
+Represents an abbreviation or acronym.
+
+Example:
+
+<p>
+    <abbr title="HyperText Markup Language">
+        HTML
+    </abbr>
+    is a markup language.
+</p>
+
+The title attribute provides the full form.
+
+
+Q. <cite> - Citation
+
+Represents the title of a creative work.
+
+Example:
+
+<p>My favourite book is <cite>Wings of Fire</cite>.</p>
+
+
+6. Difference Between <b> and <strong>
+
+<b>:
+- Makes text visually bold.
+- Does not indicate additional importance.
+
+<strong>:
+- Indicates strong importance or seriousness.
+- Has semantic meaning.
+- Usually appears bold in browsers.
+
+Interview Tip:
+
+Use strong when the content is important.
+Use b when you only need stylistic attention.
+
+
+7. Difference Between <i> and <em>
+
+<i>:
+- Represents text in an alternate voice or mood.
+- Does not indicate stress emphasis.
+
+<em>:
+- Indicates stress emphasis.
+- Has semantic meaning.
+- Usually appears italic in browsers.
+
+Interview Tip:
+
+Use em when you want to emphasize a word.
+Use i for alternate voice, technical terms,
+or other appropriate stylistic purposes.
+
+
+8. Difference Between <br> and <hr>
+
+<br>:
+- Inserts a line break.
+- Moves content to the next line.
+
+<hr>:
+- Represents a thematic break.
+- Generally displays a horizontal line.
+
+
+9. Difference Between <pre> and <p>
+
+<pre>:
+- Preserves spaces and line breaks.
+- Useful for preformatted content.
+
+<p>:
+- Represents a paragraph.
+- Browsers normally collapse consecutive spaces
+  and line breaks into a single space.
+
+
+10. Can We Use HTML Tags Inside Other HTML Tags?
+
+Yes. HTML supports nested elements.
+
+Example:
+
+<p>
+    HTML is <strong>very important</strong>
+    for <em>frontend development</em>.
+</p>
+
+Important:
+Always follow proper nesting rules and avoid
+placing elements inside parents where they
+are not permitted.
+
+
+==================================================
+INTERVIEW QUICK REVISION
+==================================================
+
+Q1. How many heading tags are available in HTML?
+
+Six heading levels are available, from h1 to h6.
+
+Q2. What is the difference between h1 and h6?
+
+h1 represents the highest-level heading, whereas
+h6 represents the lowest-level heading.
+
+Q3. What is the difference between <b> and <strong>?
+
+b provides visual bold formatting.
+strong indicates semantic importance.
+
+Q4. What is the difference between <i> and <em>?
+
+i represents alternate voice or mood.
+em represents stress emphasis.
+
+Q5. What is the difference between <br> and <hr>?
+
+br inserts a line break.
+hr represents a thematic break.
+
+Q6. What is the purpose of the <pre> tag?
+
+It preserves whitespace and line breaks.
+
+Q7. What is the purpose of the <mark> tag?
+
+It highlights text relevant to the current context.
+
+Q8. What is the difference between <sub> and <sup>?
+
+sub displays text below the normal line.
+sup displays text above the normal line.
+
+Q9. Is <br> a paired or unpaired element?
+
+It is a void element and does not require a closing tag.
+
+Q10. What is the purpose of <blockquote>?
+
+It represents a section quoted from another source.
+
+Q11. Does HTML preserve multiple spaces?
+
+Not in normal text. Browsers collapse consecutive
+whitespace characters into a single space.
+The pre element preserves whitespace.
+
+Q12. Why should we use headings in HTML?
+
+Headings provide a logical content hierarchy
+and improve accessibility and document structure.
+
+
+==================================================
+END OF SECTION 4
+==================================================
+
+
+==================================================
+SECTION 5: HTML LINKS AND IMAGES
+==================================================
+
+1. HTML Links (Anchor Tag)
+
+The <a> tag is called the anchor tag.
+
+It is used to create hyperlinks that allow users
+to navigate from one webpage to another webpage,
+website, file or location within the same page.
+
+Syntax:
+
+<a href="URL">Link Text</a>
+
+Example:
+
+<a href="https://www.google.com">Visit Google</a>
+
+Explanation:
+
+- <a> = Anchor tag.
+- href = Specifies the destination URL.
+- Visit Google = Clickable link text.
+
+When a user clicks the link, the browser navigates
+to the specified destination.
+
+
+2. What is the href Attribute?
+
+href stands for Hypertext Reference.
+
+It specifies the destination of a hyperlink.
+
+Example:
+
+<a href="https://www.google.com">Google</a>
+
+The browser navigates to Google when the user
+clicks the link.
+
+
+3. Types of URLs in HTML
+
+There are two commonly used types of URLs.
+
+A. Absolute URL
+
+An absolute URL contains the complete address
+of a resource, including the protocol and domain.
+
+Example:
+
+<a href="https://www.google.com">Google</a>
+
+Other examples:
+
+https://www.example.com/about.html
+https://www.example.com/images/logo.png
+
+Used when linking to external websites or
+resources with a complete address.
+
+
+B. Relative URL
+
+A relative URL specifies the location of a resource
+relative to the current document or its base URL.
+
+Example:
+
+<a href="about.html">About Us</a>
+
+Other examples:
+
+<a href="pages/contact.html">Contact</a>
+
+<img src="images/logo.png" alt="Logo">
+
+Used commonly when linking to files within
+the same website or project.
+
+
+4. Understanding Relative Paths
+
+Consider this project structure:
+
+my-website/
+|
+|-- index.html
+|-- about.html
+|
+|-- pages/
+|   |-- contact.html
+|
+|-- images/
+|   |-- logo.png
+|
+|-- css/
+    |-- style.css
+
+Assume we are writing code inside index.html.
+
+A. Same Folder:
+
+<a href="about.html">About</a>
+
+B. Inside a Subfolder:
+
+<a href="pages/contact.html">Contact</a>
+
+C. Image Inside a Folder:
+
+<img src="images/logo.png" alt="Logo">
+
+D. Parent Folder:
+
+../ means move one directory level up.
+
+Example:
+
+<a href="../index.html">Home</a>
+
+Important:
+Relative paths are resolved from the document's
+base URL, not necessarily from the location of
+the currently displayed element.
+
+
+5. What is the target Attribute?
+
+The target attribute specifies where to open
+the linked resource.
+
+Common values:
+
+A. _self
+
+Opens the link in the same browsing context.
+
+Example:
+
+<a href="https://www.google.com" target="_self">
+    Google
+</a>
+
+B. _blank
+
+Opens the link in a new tab or browsing context.
+
+Example:
+
+<a href="https://www.google.com" target="_blank"
+   rel="noopener noreferrer">
+    Google
+</a>
+
+C. _parent
+
+Opens the link in the parent browsing context.
+
+D. _top
+
+Opens the link in the top-level browsing context.
+
+Important:
+For external links using target="_blank",
+using rel="noopener" is a good security practice.
+noreferrer additionally prevents sending the
+referrer information.
+
+
+6. What is the rel Attribute?
+
+The rel attribute specifies the relationship
+between the current document and the linked resource.
+
+Example:
+
+<a href="https://www.example.com"
+   target="_blank"
+   rel="noopener noreferrer">
+   Visit Website
+</a>
+
+Common values:
+
+- noopener: Prevents the opened page from accessing
+  the originating window through window.opener.
+- noreferrer: Prevents sending referrer information.
+- nofollow: Gives search engines a link relationship
+  hint not to follow the link for ranking purposes.
+- stylesheet: Identifies a linked CSS stylesheet.
+
+
+7. Opening an Email Using HTML
+
+The mailto: scheme opens the user's default
+email application.
+
+Example:
+
+<a href="mailto:support@example.com">
+    Contact Support
+</a>
+
+We can also specify a subject:
+
+<a href="mailto:support@example.com?subject=Support%20Request">
+    Send Email
+</a>
+
+
+8. Making a Phone Number Clickable
+
+We can use the tel: scheme to create a clickable
+phone number.
+
+Example:
+
+<a href="tel:+911234567890">
+    Call Us
+</a>
+
+This is especially useful on mobile devices.
+
+
+9. Creating a Link to a Specific Section
+of the Same Webpage
+
+We can use the id attribute to navigate to
+a specific section.
+
+Example:
+
+<a href="#contact">Go to Contact Section</a>
+
+<h2 id="contact">Contact Us</h2>
+
+Explanation:
+
+- #contact refers to an element with id="contact".
+- Clicking the link moves the browser to that section.
+
+
+10. HTML Images
+
+The <img> tag is used to display images
+on a webpage.
+
+Syntax:
+
+<img src="image.jpg" alt="Description">
+
+Example:
+
+<img src="images/profile.jpg" alt="Employee Photo">
+
+Explanation:
+
+- img = Image element.
+- src = Specifies the image location.
+- alt = Provides alternative text.
+
+Important:
+The img element is a void element.
+It does not require a closing tag.
+
+
+11. Important Image Attributes
+
+A. src
+
+Specifies the path or URL of the image.
+
+Example:
+
+<img src="logo.png" alt="Company Logo">
+
+
+B. alt
+
+Provides alternative text for the image.
+
+Example:
+
+<img src="profile.jpg" alt="Employee Profile Photo">
+
+Why is alt important?
+
+- Improves accessibility.
+- Helps screen readers describe images.
+- Displays alternative text when an image
+  cannot be loaded.
+
+Important:
+For decorative images that add no meaningful
+information, use alt="".
+
+Example:
+
+<img src="decoration.png" alt="">
+
+
+C. width
+
+Specifies the image width.
+
+Example:
+
+<img src="photo.jpg" width="300" alt="Photo">
+
+
+D. height
+
+Specifies the image height.
+
+Example:
+
+<img src="photo.jpg" height="200" alt="Photo">
+
+
+E. title
+
+Provides additional information about the image.
+
+Example:
+
+<img src="photo.jpg"
+     alt="Employee Photo"
+     title="Employee Profile">
+
+
+12. Setting Image Dimensions
+
+We can set both width and height.
+
+Example:
+
+<img src="photo.jpg"
+     alt="Employee Photo"
+     width="300"
+     height="200">
+
+Important:
+
+- Width and height define the displayed dimensions.
+- Specify the correct aspect ratio to avoid distortion.
+- CSS is commonly used for responsive image sizing.
+
+Example using CSS:
+
+<img src="photo.jpg" alt="Photo"
+     style="max-width: 100%; height: auto;">
+
+
+13. What are Common Image Formats?
+
+A. JPEG / JPG
+
+- Commonly used for photographs.
+- Supports lossy compression.
+- Does not support transparency.
+
+B. PNG
+
+- Supports transparency.
+- Uses lossless compression.
+- Commonly used for logos and graphics.
+
+C. GIF
+
+- Supports simple animation.
+- Supports limited colors.
+- Can be used for simple animated images.
+
+D. SVG
+
+- Vector image format.
+- Can be scaled without losing quality.
+- Commonly used for icons and logos.
+
+E. WebP
+
+- Modern image format.
+- Supports lossy and lossless compression.
+- Supports transparency and animation.
+- Often provides smaller file sizes.
+
+F. AVIF
+
+- Modern image format.
+- Provides efficient image compression.
+- Supports transparency and HDR features.
+
+
+14. Making an Image Clickable
+
+We can place an image inside an anchor tag.
+
+Example:
+
+<a href="https://www.google.com">
+    <img src="google-logo.png" alt="Visit Google">
+</a>
+
+When the user clicks the image, the browser
+navigates to Google.
+
+
+15. What is the Difference Between <a> and <img>?
+
+<a>:
+- Creates a hyperlink.
+- Used for navigation.
+- Uses href to specify the destination.
+
+<img>:
+- Displays an image.
+- Uses src to specify the image source.
+- Uses alt to provide alternative text.
+
+We can also combine both to create
+a clickable image.
+
+
+16. What is the <figure> Element?
+
+The <figure> element represents self-contained
+content such as images, diagrams or illustrations.
+
+Example:
+
+<figure>
+    <img src="employee.jpg"
+         alt="Employee working on a laptop">
+
+    <figcaption>
+        Employee working on a project.
+    </figcaption>
+</figure>
+
+<figcaption> provides a caption for the figure.
+
+
+17. What is Lazy Loading?
+
+Lazy loading means loading images only when
+they are needed, usually when they approach
+the visible area of the webpage.
+
+Example:
+
+<img src="large-image.jpg"
+     alt="Large Image"
+     loading="lazy">
+
+Benefits:
+
+- Reduces initial page loading work.
+- Saves bandwidth when images are not viewed.
+- Can improve initial page performance.
+
+Important:
+Avoid lazy loading the main above-the-fold
+or likely Largest Contentful Paint image.
+Such images may need eager loading instead.
+
+
+18. What is Responsive Image Loading?
+
+Responsive images allow browsers to choose
+appropriate image resources based on screen size
+or display requirements.
+
+A. Using srcset
+
+<img
+    src="small.jpg"
+    srcset="small.jpg 480w,
+            medium.jpg 800w,
+            large.jpg 1200w"
+    sizes="(max-width: 600px) 480px,
+           (max-width: 1000px) 800px,
+           1200px"
+    alt="Nature">
+
+Explanation:
+
+- src provides a fallback image.
+- srcset provides multiple image candidates.
+- sizes tells the browser the expected display width.
+
+B. Using picture
+
+The <picture> element allows different image
+sources to be selected based on conditions.
+
+Example:
+
+<picture>
+    <source media="(max-width: 600px)"
+            srcset="mobile.jpg">
+
+    <source media="(min-width: 601px)"
+            srcset="desktop.jpg">
+
+    <img src="desktop.jpg" alt="Nature">
+</picture>
+
+The browser selects a suitable source.
+The img element provides the fallback.
+
+
+==================================================
+INTERVIEW QUICK REVISION
+==================================================
+
+Q1. What is an anchor tag?
+
+The anchor tag creates hyperlinks to navigate
+between webpages or resources.
+
+Q2. What is the purpose of href?
+
+It specifies the destination URL of a hyperlink.
+
+Q3. What is the difference between absolute
+and relative URLs?
+
+An absolute URL contains the complete resource
+address. A relative URL specifies a resource
+location relative to the current document's
+base URL.
+
+Q4. What is the purpose of target="_blank"?
+
+It opens the linked resource in a new browsing
+context, usually a new tab.
+
+Q5. What is the purpose of the alt attribute?
+
+It provides alternative text for images and
+improves accessibility.
+
+Q6. Is img a paired or unpaired element?
+
+It is a void element and does not require
+a closing tag.
+
+Q7. What is the difference between src and href?
+
+src specifies the source of an embedded resource,
+such as an image or script.
+
+href specifies a linked resource or destination,
+such as a hyperlink or stylesheet.
+
+Q8. How can we make an image clickable?
+
+Place the img element inside an anchor element.
+
+Q9. What is lazy loading?
+
+It delays loading resources until they are
+needed or approaching the visible area.
+
+Q10. What is the purpose of the picture element?
+
+It allows browsers to select different image
+sources based on media conditions or formats.
+
+Q11. What is the difference between PNG and JPEG?
+
+PNG supports lossless compression and transparency.
+JPEG uses lossy compression and is commonly used
+for photographs.
+
+Q12. What is the purpose of loading="lazy"?
+
+It enables browser-supported lazy loading
+for an image.
+
+Q13. What is the purpose of rel="noopener"?
+
+It prevents a newly opened browsing context
+from accessing the original page through
+window.opener.
+
+Q14. What is the purpose of the figure element?
+
+It represents self-contained content such as
+images, diagrams and illustrations.
+
+Q15. How do you navigate to a specific section
+of the same webpage?
+
+Use an anchor link with the target element's ID.
+
+Example:
+
+<a href="#skills">Go to Skills</a>
+
+<h2 id="skills">Skills</h2>
+
+
+==================================================
+END OF SECTION 5
+==================================================
+
+
+==================================================
+SECTION 6: HTML LISTS
+==================================================
+
+1. What are HTML Lists?
+
+HTML lists are used to display related items
+in an organized format.
+
+HTML provides three types of lists:
+
+- Ordered List
+- Unordered List
+- Description List
+
+
+2. Ordered List (<ol>)
+
+Displays items in a numbered sequence.
+
+Example:
+
+<ol>
+    <li>Java</li>
+    <li>HTML</li>
+    <li>CSS</li>
+</ol>
+
+Output:
+1. Java
+2. HTML
+3. CSS
+
+3. Unordered List (<ul>)
+
+Displays items with bullet points.
+
+Example:
+
+<ul>
+    <li>Java</li>
+    <li>HTML</li>
+    <li>CSS</li>
+</ul>
+
+4. List Item (<li>)
+
+The <li> tag defines an individual item
+inside an ordered or unordered list.
+
+
+5. Ordered List Attributes
+
+type:
+Specifies the numbering style.
+
+- type="1" - Numbers
+- type="A" - Uppercase letters
+- type="a" - Lowercase letters
+- type="I" - Uppercase Roman numbers
+- type="i" - Lowercase Roman numbers
+
+start:
+Specifies the starting number.
+
+Example:
+
+<ol type="A" start="3">
+    <li>Java</li>
+    <li>Spring Boot</li>
+</ol>
+
+Output:
+C. Java
+D. Spring Boot
+
+
+6. Nested Lists
+
+A list placed inside another list is called
+a nested list.
+
+Example:
+
+<ul>
+    <li>Programming
+        <ul>
+            <li>Java</li>
+            <li>Python</li>
+        </ul>
+    </li>
+    <li>Database
+        <ul>
+            <li>MySQL</li>
+            <li>Oracle</li>
+        </ul>
+    </li>
+</ul>
+
+
+7. Description List (<dl>)
+
+Used to display terms along with their descriptions.
+
+Tags:
+
+<dl> - Defines the description list.
+<dt> - Defines the term.
+<dd> - Defines the description.
+
+Example:
+
+<dl>
+    <dt>HTML</dt>
+    <dd>Defines webpage structure.</dd>
+
+    <dt>CSS</dt>
+    <dd>Defines webpage styling.</dd>
+</dl>
+
+
+8. Difference Between ol, ul and dl
+
+ol - Numbered list.
+ul - Bulleted list.
+dl - Term and description list.
+
+
+==================================================
+INTERVIEW QUICK REVISION
+==================================================
+
+Q1. How many types of lists are available in HTML?
+
+Three: Ordered, Unordered and Description lists.
+
+Q2. What is the difference between ol and ul?
+
+ol displays numbered items.
+ul displays bulleted items.
+
+Q3. What is the purpose of li?
+
+It defines an individual list item.
+
+Q4. What is a nested list?
+
+A list placed inside another list.
+
+Q5. What are dt and dd?
+
+dt defines a term.
+dd provides its description.
+
+Q6. Can we create a nested list?
+
+Yes. We can place another ul or ol inside
+an li element.
+
+Q7. Which attribute changes the starting
+number of an ordered list?
+
+The start attribute.
+
+==================================================
+END OF SECTION 6
+==================================================
+
+
+==================================================
+SECTION 7: HTML TABLES
+==================================================
+
+1. What are HTML Tables?
+
+HTML tables are used to display data in rows
+and columns.
+
+2. Important Table Tags
+
+<table> - Creates a table.
+<tr> - Defines a table row.
+<th> - Defines a table header cell.
+<td> - Defines a table data cell.
+<thead> - Groups table header content.
+<tbody> - Groups table body content.
+<tfoot> - Groups table footer content.
+<caption> - Defines a table caption.
+
+3. Basic Table Example
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Role</th>
+    </tr>
+
+    <tr>
+        <td>101</td>
+        <td>Sneha</td>
+        <td>Java Developer</td>
+    </tr>
+
+    <tr>
+        <td>102</td>
+        <td>Rahul</td>
+        <td>Tester</td>
+    </tr>
+</table>
+
+4. Table Structure
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>101</td>
+            <td>Sneha</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="2">Total Employees: 1</td>
+        </tr>
+    </tfoot>
+</table>
+
+5. What is colspan?
+
+colspan is used to merge multiple columns
+into one cell.
+
+Example:
+
+<td colspan="2">Employee Details</td>
+
+6. What is rowspan?
+
+rowspan is used to merge multiple rows
+into one cell.
+
+Example:
+
+<td rowspan="2">Java Developer</td>
+
+7. What is the caption Tag?
+
+It provides a title or description for a table.
+
+Example:
+
+<table>
+    <caption>Employee Details</caption>
+</table>
+
+8. What is the scope Attribute?
+
+It specifies whether a header cell applies
+to a row, column, row group or column group.
+
+Common values:
+
+scope="row"
+scope="col"
+scope="rowgroup"
+scope="colgroup"
+
+Example:
+
+<th scope="col">Employee Name</th>
+
+9. Styling HTML Tables
+
+CSS is used to style HTML tables.
+
+Example:
+
+<table style="border-collapse: collapse;
+              width: 100%;">
+
+    <tr>
+        <th>Name</th>
+        <th>Role</th>
+    </tr>
+
+    <tr>
+        <td>Sneha</td>
+        <td>Developer</td>
+    </tr>
+
+</table>
+
+==================================================
+INTERVIEW QUICK REVISION
+==================================================
+
+Q1. Which tag creates a table?
+<table>
+
+Q2. Difference between tr, th and td?
+
+tr - Table row.
+th - Header cell.
+td - Data cell.
+
+Q3. Difference between thead and tbody?
+
+thead groups header rows.
+tbody groups the main data rows.
+
+Q4. What is colspan?
+
+It merges multiple columns into one cell.
+
+Q5. What is rowspan?
+
+It merges multiple rows into one cell.
+
+Q6. What is the purpose of caption?
+
+It provides a title or description for a table.
+
+Q7. Can we create a table inside another table?
+
+Yes. Nested tables are possible, although
+they should be avoided unless necessary.
+
+Q8. What is the purpose of scope?
+
+It identifies which cells a table header
+is associated with, improving accessibility.
+
+==================================================
+END OF SECTION 7
+==================================================
+
+
+<!-- 1. What is an HTML Form?
+A form is used to collect user input and submit data to a server.
+
+<form action="/submit" method="POST">
+    Form elements go here
+</form>
+
+action: URL where form data is sent.
+method: HTTP method used to send data (GET or POST).
+
+
+<!-- 2. Common Input Types -->
+
+<input type="text" placeholder="Enter name">
+<input type="password" placeholder="Enter password">
+<input type="email" placeholder="Enter email">
+<input type="number" placeholder="Enter age">
+<input type="date">
+<input type="file">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+
+
+<!-- 3. Label Element
+A label describes an input field.
+The for attribute must match the input's id.
+
+<label for="username">Username:</label>
+<input type="text" id="username" name="username">
+
+
+<!-- 4. Radio Buttons
+Used when the user must select only ONE option.
+Radio buttons in a group must have the same name.
+
+<input type="radio" id="male" name="gender" value="Male">
+<label for="male">Male</label>
+
+<input type="radio" id="female" name="gender" value="Female">
+<label for="female">Female</label>
+
+
+<!-- 5. Checkboxes
+Used when the user can select MULTIPLE options.
+
+<input type="checkbox" id="java" name="skills" value="Java">
+<label for="java">Java</label>
+
+<input type="checkbox" id="sql" name="skills" value="SQL">
+<label for="sql">SQL</label>
+
+
+<!-- 6. Textarea
+Used for multi-line text input.
+
+<textarea name="message" rows="4" cols="30"></textarea>
+
+
+<!-- 7. Select and Option
+Used to create a dropdown list.
+
+<select name="city">
+    <option value="bangalore">Bangalore</option>
+    <option value="mysore">Mysore</option>
+    <option value="chennai">Chennai</option>
+</select>
+
+
+<!-- 8. Button
+Different button types:
+
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+<button type="button">Click Me</button>
+
+Note: A button inside a form defaults to submit
+if its type is not specified.
+
+
+<!-- 9. Important Input Attributes
+
+name       - Key used when submitting form data.
+id         - Unique identifier for an element.
+value      - Value submitted with the form.
+placeholder - Hint displayed inside an input.
+required   - Makes the field mandatory.
+readonly   - Cannot be edited, but is submitted.
+disabled   - Cannot be edited and is NOT submitted.
+min / max  - Minimum and maximum allowed values.
+minlength / maxlength - Text length limits.
+
+
+<!-- 10. GET vs POST
+
+GET:
+- Sends form data as URL query parameters.
+- Suitable for searches and retrieving data.
+- Data is visible in the URL.
+
+POST:
+- Sends form data in the request body.
+- Suitable for submitting or creating data.
+- Data is not displayed in the URL.
+
+Note: POST alone does not encrypt data.
+Use HTTPS to protect data in transit.
+
+
+<!-- 11. Complete Form Example -->
+
+<form action="/register" method="POST">
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit">Register</button>
+
+</form>
+
+
+<!-- 1. What is Semantic HTML?
+
+Semantic HTML means using HTML tags that clearly describe
+the purpose of their content.
+
+Examples:
+<header>, <nav>, <main>, <section>, <article>, <footer>
+
+These tags help:
+- Improve code readability.
+- Improve accessibility.
+- Help search engines understand page structure (SEO).
+
+
+<!-- 2. Important Semantic Tags -->
+
+<header>
+    <h1>My Website</h1>
+</header>
+
+<!-- Contains navigation links -->
+<nav>
+    <a href="/home">Home</a>
+    <a href="/about">About</a>
+</nav>
+
+<!-- Contains the main content of the page -->
+<main>
+    <h2>Welcome</h2>
+</main>
+
+<!-- Groups related content -->
+<section>
+    <h2>About Us</h2>
+    <p>Information about our company.</p>
+</section>
+
+<!-- Independent, self-contained content -->
+<article>
+    <h2>HTML Tutorial</h2>
+    <p>Learn HTML basics.</p>
+</article>
+
+<!-- Additional or indirectly related content -->
+<aside>
+    <h3>Related Links</h3>
+</aside>
+
+<!-- Footer information -->
+<footer>
+    <p>Copyright 2026</p>
+</footer>
+
+
+<!-- 3. Complete Semantic HTML Structure -->
+
+<body>
+
+    <header>
+        <h1>My Website</h1>
+    </header>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>About HTML</h2>
+            <p>HTML structures web pages.</p>
+        </section>
+
+        <article>
+            <h2>Latest Article</h2>
+            <p>Learn semantic HTML.</p>
+        </article>
+
+        <aside>
+            <p>Related information</p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>Copyright 2026</p>
+    </footer>
+
+</body>
+
+
+<!-- 4. Semantic vs Non-Semantic Elements
+
+Semantic elements:
+<header>, <footer>, <article>, <section>
+
+Non-semantic elements:
+<div>, <span>
+
+<div>:
+A generic block-level container.
+
+<span>:
+A generic inline container.
+
+Use semantic elements when they describe the content's
+meaning. Use div and span when no semantic element fits.
