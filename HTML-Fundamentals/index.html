@@ -210,15 +210,16 @@
      <!-- Student table -->
       <br/>
       <hr/>
-
-      <caption>Student Data</caption>
+  
       <table>
+
         <thead>
+          <caption>Student Data</caption>
           <tr>
-            <th>Sl.No</th>
-            <th>Name</th>
+            <th colspan="2">INFORMATION</th>
           </tr>
         </thead>
+
         <tbody>
           <tr>
             <td>1</td>
@@ -233,6 +234,25 @@
             <td>Alis</td>
           </tr>
         </tbody>
+
       </table>
+
+    <br/>
+    <hr/>
+    <!-- Forms in HTML - To collect data from user - login/sign up -->
+    <form action="/action.php">
+      <input type="text" placeholder="Enter username">  
+      <br/>
+      <br/>
+      <input type="password" placeholder="Enter password">
+      <br/>
+      <br/>
+      <input type="radio" value="class X" name="class">Class X
+      <br/>
+      <input type="radio" value="class XI" name="class">Class XI
+      <br/>
+      <button>Login</button>
+    </form>
+
   </body>
 </html>
